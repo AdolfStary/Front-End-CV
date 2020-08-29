@@ -1,0 +1,167 @@
+/* Fonts
+
+font-family: 'Architects Daughter', cursive;
+font-family: 'Bangers', cursive;
+font-family: 'Press Start 2P', cursive;
+
+
+Colors:
+    Aqua: #44E1F2
+    Pink: #8E3469
+    Purple: #2A1F73
+    Dark Purple: #131140
+    Very Dark purple: #0C1026
+
+
+*/
+
+* {
+    padding: 0px;
+    margin: 0;
+}
+
+html {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #000000;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    color: #CCCCCC;
+}
+
+header {
+    border-bottom: 2px solid #999999;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 72px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.25em;
+    color: #44E1F2;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+}
+
+header h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #8E3469;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+p {
+    display: block;
+}
+
+/* //////////////////////////////// */
+/* MAIN */
+/* //////////////////////////////// */
+main {
+    display: grid;
+    width: 100%;
+    color: #CCCCCC;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    grid-template-columns: 50% 50%;
+
+    grid-template-rows:
+                            375px   /* Summary */
+                            675px   /* Projects */
+                            1275px  /* Work experience */
+                            75px    /* Education and certificates heading*/
+                            300px   /* Education and certificates */
+                            75px    /* About Heading */
+                            300px   /* About 1 */
+                            300px   /* About 2 */
+                            75px    /* Contact heading */
+                            500px   /* Contact form */
+                            200px;   /* links and copyright */
+
+
+    grid-template-areas:
+                            "summary summary"
+                            "summary-left summary-left summary-right summary-right"
+                            "portfolio-h2 portfolio-h2 portfolio-h2 portfolio-h2"
+                            "portfolio-section1 portfolio-section1 portfolio-h3-1 portfolio-h3-1"
+                            "portfolio-section1 portfolio-section1 portfolio-section1 portfolio-p-1"
+    ;
+
+
+
+}
+
+main h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #8E3469;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+main h3 {
+    font-family: 'Press Start 2P', cursive;
+    color: #8E3469;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    font-size: 12px;
+    text-align: right;
+
+}
+
+/* Grid Layout for Elements */
+#summary h2 {grid-area: summary-h2;}
+#summary p {grid-area: summary-left;}
+#summary p:nth-of-type(2) {grid-area: summary-right;}
+
+#portfolio h2{grid-area: portfolio-h2;}
+#portfolio section {grid-area: portfolio-section1;}
+#portfolio h3{grid-area: portfolio-h3-1;}
+#portfolio p{grid-area: portfolio-p-1;}
+
+
+
+
+
+
+
+/* //////////////////////////////// */
+/* Tablet */
+/* //////////////////////////////// */
+
+@media screen and (min-width: 600px){
+    body{
+        max-width: 500px;
+    }
+
+}
+
+/* //////////////////////////////// */
+/* Laptop / PC */
+/* //////////////////////////////// */
+
+@media screen and (min-width: 1024px){
+    body{
+        max-width: 800px;
+    }
+
+}
+
+
+
+
