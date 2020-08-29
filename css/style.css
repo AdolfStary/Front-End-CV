@@ -62,9 +62,7 @@ nav ul {
     padding-left: 0;
 }
 
-p {
-    display: block;
-}
+
 
 /* //////////////////////////////// */
 /* MAIN */
@@ -73,8 +71,7 @@ main {
     display: grid;
     width: 100%;
     color: #CCCCCC;
-    padding-left: 20px;
-    padding-right: 20px;
+    
 
     grid-template-columns: 50% 50%;
 
@@ -82,22 +79,19 @@ main {
                             375px   /* Summary */
                             675px   /* Projects */
                             1275px  /* Work experience */
-                            75px    /* Education and certificates heading*/
-                            300px   /* Education and certificates */
-                            75px    /* About Heading */
-                            300px   /* About 1 */
-                            300px   /* About 2 */
-                            75px    /* Contact heading */
-                            500px   /* Contact form */
-                            200px;   /* links and copyright */
+                            375px   /* Education and Certificates */
+                            675px   /* About */
+                            575px;   /* Contact */
+
 
 
     grid-template-areas:
-                            "summary summary"
-                            "summary-left summary-left summary-right summary-right"
-                            "portfolio-h2 portfolio-h2 portfolio-h2 portfolio-h2"
-                            "portfolio-section1 portfolio-section1 portfolio-h3-1 portfolio-h3-1"
-                            "portfolio-section1 portfolio-section1 portfolio-section1 portfolio-p-1"
+                            "summary strengths"
+                            "portfolio portfolio"
+                            "work-experience work-experience"
+                            "education education"
+                            "about about"
+                            "contact contact"
     ;
 
 
@@ -106,11 +100,14 @@ main {
 
 main h2 {
     font-family: 'Press Start 2P', cursive;
-    color: #8E3469;
+    color: #44E1F2;
     margin-top: 0.83em;
     margin-bottom: 0.83em;
     font-size: 14px;
     text-align: center;
+    background-color: #0C102699;
+    
+    padding: 15px;
 
 }
 
@@ -121,21 +118,40 @@ main h3 {
     margin-bottom: 0.83em;
     font-size: 12px;
     text-align: right;
+    background-color: #13114099;
 
 }
 
+main article p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /* Grid Layout for Elements */
-#summary h2 {grid-area: summary-h2;}
+#summary {grid-area: summary;}
+#summary h3 {
+    grid-area: summary-h2; 
+    text-align: center;
+}
 #summary p {grid-area: summary-left;}
 #summary p:nth-of-type(2) {grid-area: summary-right;}
 
+#strengths {grid-area: strengths;}
+#strengths h3 {text-align: center;}
+
+#portfolio {grid-area: portfolio;}
 #portfolio h2{grid-area: portfolio-h2;}
 #portfolio section {grid-area: portfolio-section1;}
 #portfolio h3{grid-area: portfolio-h3-1;}
 #portfolio p{grid-area: portfolio-p-1;}
 
+#work-experience {grid-area: work-experience;}
 
+#education {grid-area: education;}
 
+#about  {grid-area: about;}
+
+#contact {grid-area: contact;}
 
 
 
