@@ -63,3 +63,5 @@ https://trello.com/b/gjNbX65b
 
 
 # Citations
+1 Image by <a href="https://pixabay.com/users/EvgeniT-4930349/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4006343">Evgeni Tcherkasski</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4006343">Pixabay</a>
+2 Image by <a href="https://pixabay.com/users/Yuri_B-2216431/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1548139">Yuri_B</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1548139">Pixabay</a>
