@@ -160,9 +160,22 @@ article p {background-color: #0C1026BB;}
     grid-area: summary-text;
 }
 
-#strengths p {background-color: #0C1026BB;}
-#strengths {grid-area: strengths;}
-#strengths h3 {text-align: center;}
+#strengths {
+    grid-area: strengths;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 75px 300px;
+    grid-template-areas: "strengths-heading" "strengths-text";
+}
+#strengths h3 {
+    grid-area: strengths-heading;
+    text-align: center;   
+}
+#strengths p {
+    grid-area: strengths-text;
+}
+
+
 
 
 /* /////////////////////////////////////////////// */
@@ -341,11 +354,53 @@ article p {background-color: #0C1026BB;}
     grid-area: education-text;
 }
 
+/* //////////////////////////////// */
+/* About */
+/* //////////////////////////////// */
 
+#about {
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 75px 300px 300px;
+    grid-template-areas: "about-heading" "about-text-1" "about-text-2";
+}
 
-#about  {grid-area: about;}
+#about h2 {
+    grid-area: about-heading;
+    text-align: center;
+}
+#about div {
+    grid-area: about-text-1;
+    text-align: right;
+}
 
-#contact {grid-area: contact;}
+#about div:nth-of-type(2) {
+    grid-area: about-text-2;
+    text-align: left;
+}
+
+/* //////////////////////////////// */
+/* Contact */
+/* //////////////////////////////// */
+
+#contact {
+    grid-area: contact;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 75px 500px;
+    grid-template-areas: "contact-heading" "contact-form";
+}
+
+#contact h2 {
+    grid-area: contact-heading;
+    text-align: center;
+}
+#contact div {
+    grid-area: contact-form;
+    background-color: #0C1026BB;
+}
+
 
 
 
