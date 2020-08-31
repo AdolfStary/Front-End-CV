@@ -41,7 +41,7 @@ header {
 }
 
 header h1 {
-    font-size: 72px;
+    font-size: 64px;
     font-family: 'Bangers', cursive;
     letter-spacing: 0.25em;
     color: #44E1F2;
@@ -107,7 +107,7 @@ main h2 {
     color: #44E1F2;
     font-size: 14px;
     text-align: center;
-    background-color: #0C1026BB;
+    background-color: #131140DD;
     line-height: 75px;
     vertical-align: middle;
 
@@ -135,18 +135,32 @@ main article p{
     padding-right: 20px;
 
 }
+section p {background-color: #0C1026BB;}
+article p {background-color: #0C1026BB;}
 
 
-
+/* /////////////////////////////////////////////// */
 /* Grid Layout for Elements */
-#summary {grid-area: summary;}
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* Summary */
+/* /////////////////////////////////////////////// */
+#summary {
+    grid-area: summary;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 75px 300px;
+    grid-template-areas: "summary-heading" "summary-text";
+}
 #summary h3 {
-    grid-area: summary-h2; 
+    grid-area: summary-heading;
     text-align: center;
 }
-#summary p {grid-area: summary-left;}
-#summary p:nth-of-type(2) {grid-area: summary-right;}
+#summary p {
+    grid-area: summary-text;
+}
 
+#strengths p {background-color: #0C1026BB;}
 #strengths {grid-area: strengths;}
 #strengths h3 {text-align: center;}
 
@@ -210,17 +224,124 @@ main article p{
 #portfolio section:nth-of-type(2) h3{grid-area: portfolio-h3-2;}
 #portfolio section:nth-of-type(2) p{grid-area: portfolio-p-2;}
 
+/* /////////////////////////////////////////////// */
+/* Work Experience Grid layout */
+/* /////////////////////////////////////////////// */
+#work-experience {
+    grid-area: work-experience;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+                            75px    /* Work Experience h2 */
+                            300px   /* Work Experience 1 */
+                            300px   /* Work Experience 2 */
+                            300px   /* Work Experience 3 */
+                            300px;   /* Work Experience 4 */
+
+    grid-template-areas:
+                            "work-experience-h2"
+                            "work-experience-section1"
+                            "work-experience-section2"
+                            "work-experience-section3"
+                            "work-experience-section4";
+
+}
+
+#work-experience section {
+    grid-area: work-experience-section1;
+    display: grid;
+    grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
+    grid-template-rows: 
+                            50px    /* h3 */
+                            250px;   /* Text */
+
+    grid-template-areas:
+                            ". work-experience-h3-1 work-experience-h3-1"
+                            ". . work-experience-p-1";
+                            
+}
+
+#work-experience section:nth-of-type(2) {
+    grid-area: work-experience-section2;
+    display: grid;
+    background-image: url();
+    grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
+    grid-template-rows: 
+                            50px    /* h3 */
+                            250px;   /* Text */
+
+    grid-template-areas:
+                            "work-experience-h3-2 work-experience-h3-2 ."
+                            "work-experience-p-2 . .";
+                            
+
+}
+
+#work-experience section:nth-of-type(3) {
+    grid-area: work-experience-section3;
+    display: grid;
+    background-image: url();
+    grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
+    grid-template-rows: 
+                            50px    /* h3 */
+                            250px;   /* Text */
+
+    grid-template-areas:
+                            ". work-experience-h3-3 work-experience-h3-3"
+                            ". . work-experience-p-3";
+                            
+
+}
+
+#work-experience section:nth-of-type(4) {
+    grid-area: work-experience-section4;
+    display: grid;
+    background-image: url();
+    grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
+    grid-template-rows: 
+                            50px    /* h3 */
+                            250px;   /* Text */
+
+    grid-template-areas:
+                            "work-experience-h3-4 work-experience-h3-4 ."
+                            "work-experience-p-4 . .";
+                            
+
+}
+
+#work-experience section h3 {grid-area: work-experience-h3-1;}
+#work-experience section p {grid-area: work-experience-p-1;}
+#work-experience section:nth-of-type(2) h3 {grid-area: work-experience-h3-2;}
+#work-experience section:nth-of-type(2) p {grid-area: work-experience-p-2;}
+#work-experience section:nth-of-type(3) h3 {grid-area: work-experience-h3-3;}
+#work-experience section:nth-of-type(3) p {grid-area: work-experience-p-3;}
+#work-experience section:nth-of-type(4) h3 {grid-area: work-experience-h3-4;}
+#work-experience section:nth-of-type(4) p {grid-area: work-experience-p-4;}
 
 
 
 
+/* //////////////////////////////// */
+/* Education */
+/* //////////////////////////////// */
+
+#education {
+    grid-area: education;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 75px 300px;
+    grid-template-areas: "education-heading" "education-text";
+}
+
+#education h2 {
+    grid-area: education-heading;
+    text-align: center;
+}
+#education p {
+    grid-area: education-text;
+}
 
 
-
-
-#work-experience {grid-area: work-experience;}
-
-#education {grid-area: education;}
 
 #about  {grid-area: about;}
 

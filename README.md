@@ -53,6 +53,8 @@ CSS is in mobile-first format
 
 
 # Resources
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas
+
 
 
 
