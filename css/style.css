@@ -36,7 +36,6 @@ body {
 }
 
 header {
-    border-bottom: 2px solid #999999;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -60,6 +59,11 @@ header h2 {
 nav ul {
     list-style-type: none;
     padding-left: 0;
+}
+
+footer {
+    text-align: center;
+    
 }
 
 
@@ -101,31 +105,38 @@ main {
 main h2 {
     font-family: 'Press Start 2P', cursive;
     color: #44E1F2;
-    margin-top: 0.83em;
-    margin-bottom: 0.83em;
     font-size: 14px;
     text-align: center;
-    background-color: #0C102699;
-    
-    padding: 15px;
+    background-color: #0C1026BB;
+    line-height: 75px;
+    vertical-align: middle;
 
 }
 
 main h3 {
     font-family: 'Press Start 2P', cursive;
     color: #8E3469;
-    margin-top: 0.83em;
-    margin-bottom: 0.83em;
     font-size: 12px;
     text-align: right;
-    background-color: #13114099;
+    padding-right: 10px;
+    background-color: #131140BB;
+    line-height: 50px;
+    vertical-align: middle;
 
+}
+
+.leftText {
+    text-align: left;
+    padding-left: 10px;
 }
 
 main article p{
     padding-left: 20px;
     padding-right: 20px;
+
 }
+
+
 
 /* Grid Layout for Elements */
 #summary {grid-area: summary;}
@@ -139,11 +150,73 @@ main article p{
 #strengths {grid-area: strengths;}
 #strengths h3 {text-align: center;}
 
-#portfolio {grid-area: portfolio;}
+
+/* /////////////////////////////////////////////// */
+/* Portfolio Grid layout */
+/* /////////////////////////////////////////////// */
+#portfolio {
+    grid-area: portfolio;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+                            75px    /* Portfolio h2 */
+                            300px   /* Project 1 */
+                            300px;   /* Project 2 */
+
+    grid-template-areas:
+                            "portfolio-h2"
+                            "portfolio-section1"
+                            "portfolio-section2";
+
+}
+
+#portfolio section {
+    grid-area: portfolio-section1;
+    display: grid;
+    grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
+    grid-template-rows: 
+                            50px    /* Portfolio h3 */
+                            250px;   /* Text */
+
+    grid-template-areas:
+                            ". portfolio-h3-1 portfolio-h3-1"
+                            ". . portfolio-p-1";
+                            
+}
+
+#portfolio section:nth-of-type(2) {
+    grid-area: portfolio-section2;
+    display: grid;
+    background-image: url();
+    grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
+    grid-template-rows: 
+                            50px    /* Portfolio h3 */
+                            250px;   /* Text */
+
+    grid-template-areas:
+                            "portfolio-h3-2 portfolio-h3-2 ."
+                            "portfolio-p-2 . .";
+                            
+
+}
+
 #portfolio h2{grid-area: portfolio-h2;}
-#portfolio section {grid-area: portfolio-section1;}
 #portfolio h3{grid-area: portfolio-h3-1;}
-#portfolio p{grid-area: portfolio-p-1;}
+#portfolio p{
+    grid-area: portfolio-p-1;
+    background-color: #0C1026BB;
+}
+
+#portfolio section:nth-of-type(2) h3{grid-area: portfolio-h3-2;}
+#portfolio section:nth-of-type(2) p{grid-area: portfolio-p-2;}
+
+
+
+
+
+
+
+
 
 #work-experience {grid-area: work-experience;}
 
