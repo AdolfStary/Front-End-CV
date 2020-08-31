@@ -26,6 +26,7 @@ html {
     background-attachment: fixed;
     background-position: center;
     background-color: #000000;
+    font-family: sans-serif;
 }
 
 body {
@@ -74,7 +75,7 @@ footer {
 main {
     display: grid;
     width: 100%;
-    color: #CCCCCC;
+    color: #aaaaaa;
     
 
     grid-template-columns: 50% 50%;
@@ -156,8 +157,20 @@ article p {background-color: #0C1026BB;}
     grid-area: summary-heading;
     text-align: center;
 }
-#summary p {
+#summary div {
     grid-area: summary-text;
+    background-color: #0C1026BB;
+    text-align: center;
+    line-height: 300px;    
+}
+#summary ul {
+    list-style-type: none;
+    line-height: 50px;
+    height: 100%;
+}
+
+#summary li:hover {
+    color: #8E3469;
 }
 
 #strengths {
@@ -171,8 +184,18 @@ article p {background-color: #0C1026BB;}
     grid-area: strengths-heading;
     text-align: center;   
 }
-#strengths p {
+#strengths div {
     grid-area: strengths-text;
+    background-color: #0C1026BB;
+    text-align: center;
+}
+#strengths ul {
+    list-style-type: none;
+    line-height: 50px;
+    height: 100%;
+}
+#strengths li:hover {
+    color: #8E3469;
 }
 
 
