@@ -72,4 +72,13 @@ https://trello.com/b/gjNbX65b
 Background Image by Yuri B, Pixabay - https://pixabay.com/users/Yuri_B-2216431/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1548139
 
 
-Truck Image by Ely Penner, Pixabay https://pixabay.com/users/ElyPenner-5106169/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3578297
+Engine Image by Free-Photos, Pixabay - https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=768750
+
+
+Fiber optics Image by Андрей Баклан, Pixabay - https://pixabay.com/users/Visor69-3487920/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2077976
+
+
+Construction Image by annawaldl, Pixabay - https://pixabay.com/users/annawaldl-3773640/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2222458
+
+
+Hotel Image by Olya Adamovich, Pixabay - https://pixabay.com/users/Olichel-529835/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1447201

@@ -330,7 +330,7 @@ section p, article p {
 #work-experience section {
     grid-area: work-experience-section1;
     display: grid;
-    background-image: url("../img/truck.jpg");
+    background-image: url("../img/engine.jpg");
     background-size: 100% 100%;
     grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
     grid-template-rows: 
@@ -346,7 +346,7 @@ section p, article p {
 #work-experience section:nth-of-type(2) {
     grid-area: work-experience-section2;
     display: grid;
-    background-image: url();
+    background-image: url("../img/fiber.jpg");
     grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
     grid-template-rows: 
                             50px    /* h3 */
@@ -362,7 +362,7 @@ section p, article p {
 #work-experience section:nth-of-type(3) {
     grid-area: work-experience-section3;
     display: grid;
-    background-image: url();
+    background-image: url("../img/construction.jpg");
     grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
     grid-template-rows: 
                             50px    /* h3 */
@@ -378,7 +378,7 @@ section p, article p {
 #work-experience section:nth-of-type(4) {
     grid-area: work-experience-section4;
     display: grid;
-    background-image: url();
+    background-image: url("../img/hotel.jpg");
     grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
     grid-template-rows: 
                             50px    /* h3 */
