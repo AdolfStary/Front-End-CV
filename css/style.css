@@ -79,6 +79,7 @@ a:hover {
 
 em {
     color: #44E1F2;
+    font-weight: bold;
 }
 
 strong {
@@ -104,7 +105,7 @@ main {
                             375px   /* Summary */
                             675px   /* Projects */
                             1275px  /* Work experience */
-                            375px   /* Education and Certificates */
+                            475px   /* Education and Certificates */
                             675px   /* About */
                             575px;   /* Contact */
 
@@ -411,16 +412,27 @@ section p, article p {
     grid-area: education;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 75px 300px;
+    grid-template-rows: 75px 400px;
     grid-template-areas: "education-heading" "education-text";
+}
+
+#education dd {
+    padding: 5px;
+}
+
+#education dt {
+    margin-top: 10px;
 }
 
 #education h2 {
     grid-area: education-heading;
     text-align: center;
 }
-#education p {
+#education div {
     grid-area: education-text;
+    background-color: #0C1026DD;
+    padding: 20px;
+    font-size: 12px;
 }
 
 /* //////////////////////////////// */
