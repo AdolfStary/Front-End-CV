@@ -266,7 +266,8 @@ section p, article p {
 #portfolio section:nth-of-type(2) {
     grid-area: portfolio-section2;
     display: grid;
-    background-image: url();
+    background-image: url("../img/hangman.png");
+    background-size: 100% 100%;
     grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
     grid-template-rows: 
                             50px    /* Portfolio h3 */
@@ -276,6 +277,12 @@ section p, article p {
                             "portfolio-h3-2 portfolio-h3-2 ."
                             "portfolio-p-2 . .";
                             
+
+}
+#portfolio section:nth-of-type(2):hover {
+
+    background-image: url("../img/hangmanCode.png");
+    background-size: auto;
 
 }
 
@@ -307,6 +314,12 @@ section p, article p {
 #empty {
     grid-area: empty;
     background-color: #0C1026BB;
+}
+
+.play {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    margin-left: 10px; 
 }
 
 
