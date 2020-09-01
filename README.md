@@ -82,3 +82,6 @@ Construction Image by annawaldl, Pixabay - https://pixabay.com/users/annawaldl-3
 
 
 Hotel Image by Olya Adamovich, Pixabay - https://pixabay.com/users/Olichel-529835/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1447201
+
+
+Music Image by Free-Photos, Pixabay - https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1245856

@@ -64,7 +64,10 @@ nav ul {
 
 footer {
     text-align: center;
-    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Press Start 2P', cursive;
+    color: #44E1F2;
 }
 
 a {
@@ -106,7 +109,7 @@ main {
                             675px   /* Projects */
                             1275px  /* Work experience */
                             475px   /* Education and Certificates */
-                            675px   /* About */
+                            1000px   /* About */
                             575px;   /* Contact */
 
 
@@ -232,6 +235,7 @@ section p, article p {
 #portfolio {
     grid-area: portfolio;
     display: grid;
+    background-image: url("../img/UnrealGame.mp4");
     grid-template-columns: 100%;
     grid-template-rows: 
                             75px    /* Portfolio h2 */
@@ -254,8 +258,8 @@ section p, article p {
                             250px;   /* Text */
 
     grid-template-areas:
-                            ". portfolio-h3-1 portfolio-h3-1"
-                            ". . portfolio-p-1";
+                            "empty portfolio-h3-1 portfolio-h3-1"
+                            "video video portfolio-p-1";
                             
 }
 
@@ -284,6 +288,28 @@ section p, article p {
 
 #portfolio section:nth-of-type(2) h3{grid-area: portfolio-h3-2;}
 #portfolio section:nth-of-type(2) p{grid-area: portfolio-p-2;}
+
+#video {
+    grid-area: video;
+    text-align: center;
+    display: flex;
+    background-color: #0C1026BB;
+    width: 100%;
+    vertical-align: middle;
+
+}
+
+#video video {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#empty {
+    grid-area: empty;
+    background-color: #0C1026BB;
+}
+
+
 
 /* /////////////////////////////////////////////// */
 /* Work Experience Grid layout */
@@ -443,7 +469,7 @@ section p, article p {
     grid-area: about;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 75px 300px 300px;
+    grid-template-rows: 75px 300px 625px;
     grid-template-areas: "about-heading" "about-text-1" "about-text-2";
 }
 
@@ -451,14 +477,29 @@ section p, article p {
     grid-area: about-heading;
     text-align: center;
 }
+#about iframe {
+    display: block;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
 #about div {
     grid-area: about-text-1;
-    text-align: right;
+    background-image: url("../img/canada.jpg");
+    background-size: 100% 100%;
+    font-size: 12px;
+    text-align: left;
+}
+
+#about p {
+    padding: 20px;
 }
 
 #about div:nth-of-type(2) {
     grid-area: about-text-2;
-    text-align: left;
+    background-image: url("../img/music.jpg");
 }
 
 /* //////////////////////////////// */
