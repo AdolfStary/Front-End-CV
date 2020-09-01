@@ -71,6 +71,7 @@ a {
     font-weight: bold;
     color: #8E3469;
     text-decoration: none;
+    padding: 10px;
 }
 a:hover {
     color: #44E1F2;
@@ -78,7 +79,10 @@ a:hover {
 
 em {
     color: #44E1F2;
-    font-weight: bold;
+}
+
+strong {
+    color: #8E3469;
 }
 
 
@@ -124,7 +128,7 @@ main h2 {
     color: #44E1F2;
     font-size: 14px;
     text-align: center;
-    background-color: #131140DD;
+    background-color: #131140EE;
     line-height: 75px;
     vertical-align: middle;
 
@@ -135,8 +139,8 @@ main h3 {
     color: #8E3469;
     font-size: 12px;
     text-align: right;
-    padding-right: 10px;
-    background-color: #131140BB;
+    padding-right: 20px;
+    background-color: #131140DD;
     line-height: 50px;
     vertical-align: middle;
 
@@ -144,7 +148,7 @@ main h3 {
 
 .leftText {
     text-align: left;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 main article p{
@@ -152,8 +156,12 @@ main article p{
     padding-right: 20px;
 
 }
-section p {background-color: #0C1026BB;}
-article p {background-color: #0C1026BB;}
+section p, article p {
+    background-color: #0C1026DD;
+    padding: 20px;
+    font-size: 12px;
+}
+ 
 
 
 /* /////////////////////////////////////////////// */
@@ -175,7 +183,7 @@ article p {background-color: #0C1026BB;}
 }
 #summary div {
     grid-area: summary-text;
-    background-color: #0C1026BB;
+    background-color: #0C1026DD;
     text-align: center;
     line-height: 300px;    
 }
@@ -202,7 +210,7 @@ article p {background-color: #0C1026BB;}
 }
 #strengths div {
     grid-area: strengths-text;
-    background-color: #0C1026BB;
+    background-color: #0C1026DD;
     text-align: center;
 }
 #strengths ul {
@@ -239,7 +247,7 @@ article p {background-color: #0C1026BB;}
 #portfolio section {
     grid-area: portfolio-section1;
     display: grid;
-    grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
+    grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
     grid-template-rows: 
                             50px    /* Portfolio h3 */
                             250px;   /* Text */
@@ -254,7 +262,7 @@ article p {background-color: #0C1026BB;}
     grid-area: portfolio-section2;
     display: grid;
     background-image: url();
-    grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
+    grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
     grid-template-rows: 
                             50px    /* Portfolio h3 */
                             250px;   /* Text */
@@ -282,6 +290,7 @@ article p {background-color: #0C1026BB;}
 #work-experience {
     grid-area: work-experience;
     display: grid;
+    font-size: 12px;
     grid-template-columns: 100%;
     grid-template-rows: 
                             75px    /* Work Experience h2 */
@@ -299,10 +308,31 @@ article p {background-color: #0C1026BB;}
 
 }
 
+#work-experience p{
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#work-experience div {
+    background-color: #0C1026DD;
+    padding: 20px;
+}
+#work-experience ul{
+    padding-left: 20px;
+    list-style-type: square;
+}
+#work-experience li:nth-child(even){
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
 #work-experience section {
     grid-area: work-experience-section1;
     display: grid;
-    grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
+    background-image: url("../img/truck.jpg");
+    background-size: 100% 100%;
+    grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
     grid-template-rows: 
                             50px    /* h3 */
                             250px;   /* Text */
@@ -317,7 +347,7 @@ article p {background-color: #0C1026BB;}
     grid-area: work-experience-section2;
     display: grid;
     background-image: url();
-    grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
+    grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
     grid-template-rows: 
                             50px    /* h3 */
                             250px;   /* Text */
@@ -333,7 +363,7 @@ article p {background-color: #0C1026BB;}
     grid-area: work-experience-section3;
     display: grid;
     background-image: url();
-    grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
+    grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
     grid-template-rows: 
                             50px    /* h3 */
                             250px;   /* Text */
@@ -349,7 +379,7 @@ article p {background-color: #0C1026BB;}
     grid-area: work-experience-section4;
     display: grid;
     background-image: url();
-    grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
+    grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
     grid-template-rows: 
                             50px    /* h3 */
                             250px;   /* Text */
@@ -362,13 +392,13 @@ article p {background-color: #0C1026BB;}
 }
 
 #work-experience section h3 {grid-area: work-experience-h3-1;}
-#work-experience section p {grid-area: work-experience-p-1;}
+#work-experience section div {grid-area: work-experience-p-1;}
 #work-experience section:nth-of-type(2) h3 {grid-area: work-experience-h3-2;}
-#work-experience section:nth-of-type(2) p {grid-area: work-experience-p-2;}
+#work-experience section:nth-of-type(2) div {grid-area: work-experience-p-2;}
 #work-experience section:nth-of-type(3) h3 {grid-area: work-experience-h3-3;}
-#work-experience section:nth-of-type(3) p {grid-area: work-experience-p-3;}
+#work-experience section:nth-of-type(3) div {grid-area: work-experience-p-3;}
 #work-experience section:nth-of-type(4) h3 {grid-area: work-experience-h3-4;}
-#work-experience section:nth-of-type(4) p {grid-area: work-experience-p-4;}
+#work-experience section:nth-of-type(4) div {grid-area: work-experience-p-4;}
 
 
 

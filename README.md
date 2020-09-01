@@ -57,6 +57,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_A
 
 https://slicejack.com/fullscreen-html5-video-background-css/
 
+https://beamtic.com/change-every-other-element-css
 
 
 
@@ -68,4 +69,7 @@ https://trello.com/b/gjNbX65b
 
 # Citations
 
-Background Image by <a href="https://pixabay.com/users/Yuri_B-2216431/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1548139">Yuri_B</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1548139">Pixabay</a>
+Background Image by Yuri B, Pixabay - https://pixabay.com/users/Yuri_B-2216431/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1548139
+
+
+Truck Image by Ely Penner, Pixabay https://pixabay.com/users/ElyPenner-5106169/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3578297
