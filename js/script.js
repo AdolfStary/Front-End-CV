@@ -2,7 +2,9 @@ const messageForm = document.querySelector("FORM");
 const name = document.querySelector("#name");
 const subject = document.querySelector("#subject");
 const message = document.querySelector("#message");
-const myEmail = "#";
+const menu = document.querySelector("#menu");
+const menuList = document.querySelector("NAV");
+const myEmail = "astary.dev@hotmail.com";
 let swearing;
 let validInput;
 
@@ -33,6 +35,20 @@ messageForm.addEventListener("submit", (event) => {
 
 
 });
+
+menu.addEventListener("click", () => {
+
+    if (menuList.style.visibility != "visible")
+    {
+        menuList.style.visibility = "visible";
+    }
+    else
+    {
+        menuList.style.visibility = "hidden";
+    }
+    
+
+})
 
 
 function CheckForSwearing(){

@@ -48,7 +48,7 @@ header h1 {
     color: #ffffff;/*#44E1F2;*/
     margin-top: 0.67em;
     margin-bottom: 0.67em;
-    -webkit-text-stroke: 3px #000000;
+    
 }
 
 header h2 {
@@ -58,9 +58,24 @@ header h2 {
     margin-bottom: 0.83em;
 }
 
+nav {
+    visibility: hidden;
+    position: fixed;
+    text-align: left;
+    background-color: #0C1026DD;
+    border: 1px solid #000000;
+    top: 80px;
+    right: 10px;
+}
+
 nav ul {
     list-style-type: none;
     padding-left: 0;
+    
+}
+
+nav li {
+    margin: 10px;
 }
 
 footer {
@@ -68,7 +83,7 @@ footer {
     margin-top: 50px;
     margin-bottom: 50px;
     font-family: 'Press Start 2P', cursive;
-    color: #44E1F2;
+    color: #ffffff;
 }
 
 a {
@@ -88,6 +103,28 @@ em {
 
 strong {
     color: #8E3469;
+}
+
+.fab {
+    margin: 20px;
+    font-size: 64px;
+    color: white;
+}
+
+#menu {
+    position: fixed;
+    top: -10px;
+    right: -10px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 48px;
+    color: white;
+    background-color: #0C1026DD;
+    border: 1px solid #000000;
+}
+
+#menu:hover {
+    cursor: pointer;
 }
 
 
@@ -549,10 +586,11 @@ section p, article p {
 form {
     text-align: center;
 }
-#name, #message, #sendButton, #subject {
+
+/*#name, #message, #sendButton, #subject {
     background-color: #0C1026BB;
     color: #CCCCCC;
-}
+}*/
 
 #name {
     margin: 20px;
@@ -573,9 +611,10 @@ form {
 
 #sendButton {
     margin: 20px;
-    border: 2px solid #44E1F2;
+    border: 2px solid #8E3469;
     font-family: 'Press Start 2P', cursive;
     color: #8E3469;
+    background-color: #0C1026BB;
     padding: 20px;
 }
 
