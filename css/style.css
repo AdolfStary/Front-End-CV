@@ -110,7 +110,7 @@ main {
                             1275px  /* Work experience */
                             475px   /* Education and Certificates */
                             1000px   /* About */
-                            575px;   /* Contact */
+                            475px;   /* Contact */
 
 
 
@@ -523,7 +523,7 @@ section p, article p {
     grid-area: contact;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 75px 500px;
+    grid-template-rows: 75px 400px;
     grid-template-areas: "contact-heading" "contact-form";
 }
 
@@ -534,6 +534,34 @@ section p, article p {
 #contact div {
     grid-area: contact-form;
     background-color: #0C1026BB;
+}
+
+form {
+    text-align: center;
+}
+#name, #message, #sendButton {
+    background-color: #0C1026BB;
+    color: #CCCCCC;
+}
+
+#name {
+    margin: 20px;
+}
+
+#message {
+    width: 80%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+#sendButton {
+    margin: 20px;
+    border: 2px solid #44E1F2;
+    font-family: 'Press Start 2P', cursive;
+    color: #8E3469;
+    padding: 20px;
 }
 
 
