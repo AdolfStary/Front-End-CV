@@ -59,6 +59,16 @@ https://slicejack.com/fullscreen-html5-video-background-css/
 
 https://beamtic.com/change-every-other-element-css
 
+http://www.java2s.com/Tutorials/HTML_CSS/Form/Form_Element/Set_input_text_field_placeholders_in_gray_text_in_HTML_and_CSS.htm
+
+https://stackoverflow.com/questions/5235142/how-do-i-disable-the-resizable-property-of-a-textarea
+
+https://www.codesdope.com/blog/article/adding-outline-to-text-using-css/
+
+https://stackoverflow.com/questions/21028939/mailto-using-javascript
+
+
+
 
 
 
@@ -85,3 +95,4 @@ Hotel Image by Olya Adamovich, Pixabay - https://pixabay.com/users/Olichel-52983
 
 
 Music Image by Free-Photos, Pixabay - https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1245856
+
