@@ -43,9 +43,9 @@ header {
 
 header h1 {
     font-size: 64px;
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-family: sans-serif;
     letter-spacing: 0.25em;
-    color: #44E1F2;
+    color: #ffffff;/*#44E1F2;*/
     margin-top: 0.67em;
     margin-bottom: 0.67em;
     -webkit-text-stroke: 3px #000000;
@@ -106,12 +106,12 @@ main {
     grid-template-columns: 50% 50%;
 
     grid-template-rows:
-                            375px   /* Summary */
-                            675px   /* Projects */
-                            1275px  /* Work experience */
-                            475px   /* Education and Certificates */
-                            1000px   /* About */
-                            475px;   /* Contact */
+                            395px   /* Summary */
+                            695px   /* Projects */
+                            1295px  /* Work experience */
+                            495px   /* Education and Certificates */
+                            1020px   /* About */
+                            495px;   /* Contact */
 
 
 
@@ -130,10 +130,10 @@ main {
 
 main h2 {
     font-family: 'Press Start 2P', cursive;
-    color: #44E1F2;
+    color: #ffffff;/*#44E1F2;*/
     font-size: 14px;
     text-align: center;
-    background-color: #131140EE;
+    background-color: #000000;/*#131140EE;*/
     line-height: 75px;
     vertical-align: middle;
 
@@ -145,7 +145,7 @@ main h3 {
     font-size: 12px;
     text-align: right;
     padding-right: 20px;
-    background-color: #131140DD;
+    background-color: #000000;/*#131140DD;*/
     line-height: 50px;
     vertical-align: middle;
 
@@ -154,6 +154,15 @@ main h3 {
 .leftText {
     text-align: left;
     padding-left: 20px;
+}
+
+main article {
+    margin-bottom: 20px;
+}
+
+main section {
+    border-top: 2px solid #8E3469;
+
 }
 
 main article p{
