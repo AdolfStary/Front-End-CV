@@ -67,6 +67,9 @@ https://www.codesdope.com/blog/article/adding-outline-to-text-using-css/
 
 https://stackoverflow.com/questions/21028939/mailto-using-javascript
 
+https://www.w3schools.com/csSref/pr_class_cursor.asp
+
+
 
 
 

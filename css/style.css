@@ -78,6 +78,11 @@ nav li {
     margin: 10px;
 }
 
+#summaryCheck, #portfolioCheck, #workCheck, #aboutCheck, #educationCheck {
+    margin-right: 10px;
+
+}
+
 footer {
     text-align: center;
     margin-top: 50px;
@@ -135,34 +140,10 @@ strong {
 /* MAIN */
 /* //////////////////////////////// */
 main {
-    display: grid;
+
     width: 100%;
     color: #aaaaaa;
     
-
-    grid-template-columns: 50% 50%;
-
-    grid-template-rows:
-                            395px   /* Summary */
-                            695px   /* Projects */
-                            1295px  /* Work experience */
-                            495px   /* Education and Certificates */
-                            1020px   /* About */
-                            495px;   /* Contact */
-
-
-
-    grid-template-areas:
-                            "summary strengths"
-                            "portfolio portfolio"
-                            "work-experience work-experience"
-                            "education education"
-                            "about about"
-                            "contact contact"
-    ;
-
-
-
 }
 
 main h2 {
@@ -224,9 +205,9 @@ section p, article p {
 #summary {
     grid-area: summary;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 75px 300px;
-    grid-template-areas: "summary-heading" "summary-text";
+    grid-template-areas: "summary-heading skills-heading" "summary-text skills-text";
 }
 #summary h3 {
     grid-area: summary-heading;
@@ -248,29 +229,12 @@ section p, article p {
     color: #8E3469;
 }
 
-#strengths {
-    grid-area: strengths;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 75px 300px;
-    grid-template-areas: "strengths-heading" "strengths-text";
+#summary section:nth-of-type(2) h3{
+    grid-area: skills-heading;
 }
-#strengths h3 {
-    grid-area: strengths-heading;
-    text-align: center;   
-}
-#strengths div {
-    grid-area: strengths-text;
-    background-color: #0C1026DD;
-    text-align: center;
-}
-#strengths ul {
-    list-style-type: none;
-    line-height: 50px;
-    height: 100%;
-}
-#strengths li:hover {
-    color: #8E3469;
+
+#summary section:nth-of-type(2) div{
+    grid-area: skills-text;
 }
 
 

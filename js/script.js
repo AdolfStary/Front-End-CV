@@ -4,9 +4,81 @@ const subject = document.querySelector("#subject");
 const message = document.querySelector("#message");
 const menu = document.querySelector("#menu");
 const menuList = document.querySelector("NAV");
+const summaryCheck = document.querySelector("#summaryCheck");
+const portfolioCheck = document.querySelector("#portfolioCheck");
+const workCheck = document.querySelector("#workCheck");
+const educationCheck = document.querySelector("#educationCheck");
+const aboutCheck = document.querySelector("#aboutCheck");
 const myEmail = "astary.dev@hotmail.com";
+
 let swearing;
 let validInput;
+
+
+
+//////////////////////////
+//  Content filter
+//////////////////////////
+
+summaryCheck.addEventListener("click", () => {
+
+    if (summaryCheck.checked === false){
+        document.querySelector("#summary").style.display = "none";
+        document.querySelector("#strengths").style.display = "none";
+    }
+    else{
+        document.querySelector("#summary").style.display = "block";
+        document.querySelector("#strengths").style.display = "block";
+    }
+    
+
+});
+
+portfolioCheck.addEventListener("click", () => {
+
+    if (portfolioCheck.checked === false){
+        document.querySelector("#portfolio").style.display = "none";
+    }
+    else{
+        document.querySelector("#portfolio").style.display = "block";
+    }
+    
+});
+
+workCheck.addEventListener("click", () => {
+
+    if (workCheck.checked === false){
+        document.querySelector("#work-experience").style.display = "none";
+    }
+    else{
+        document.querySelector("#work-experience").style.display = "block";
+    }
+    
+});
+
+educationCheck.addEventListener("click", () => {
+
+    if (educationCheck.checked === false){
+        document.querySelector("#education").style.display = "none";
+    }
+    else{
+        document.querySelector("#education").style.display = "block";
+    }
+    
+});
+
+aboutCheck.addEventListener("click", () => {
+
+    if (aboutCheck.checked === false){
+        document.querySelector("#about").style.display = "none";
+    }
+    else{
+        document.querySelector("#about").style.display = "block";
+    }
+    
+});
+
+
 
 
 
