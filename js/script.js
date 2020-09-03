@@ -77,6 +77,9 @@ aboutCheck.addEventListener("click", () => {
 });
 
 
+//////////////////////////
+//  Events
+//////////////////////////
 
 
 
@@ -120,6 +123,11 @@ menu.addEventListener("click", () => {
 
 })
 
+
+
+//////////////////////////
+//  Functions
+//////////////////////////
 
 function CheckForSwearing(){
 
