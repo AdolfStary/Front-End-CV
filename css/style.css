@@ -20,6 +20,19 @@ Colors:
     margin: 0;
 }
 
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
 html {
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
@@ -53,7 +66,7 @@ header h1 {
 
 header h2 {
     font-family: 'Press Start 2P', cursive;
-    color: #8E3469;
+    color: #44E1F2;
     margin-top: 0.83em;
     margin-bottom: 0.83em;
 }
@@ -176,6 +189,9 @@ main h3 {
 
 main article {
     margin-bottom: 20px;
+    border-radius: 4px;
+    border-bottom: 2px solid #232323;
+
 }
 
 main section {
@@ -206,15 +222,21 @@ section p, article p {
     grid-area: summary;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 75px 300px;
-    grid-template-areas: "summary-heading skills-heading" "summary-text skills-text";
+    grid-template-rows: 75px 50px 300px;
+    grid-template-areas: "summary-heading summary-heading" "qualities-heading skills-heading" "qualities-text skills-text";
+}
+
+#summary h2 {
+    grid-area: summary-heading;
+    padding-right: 0;
 }
 #summary h3 {
-    grid-area: summary-heading;
+    grid-area: qualities-heading;
     text-align: center;
+    padding-right: 0;
 }
 #summary div {
-    grid-area: summary-text;
+    grid-area: qualities-text;
     background-color: #0C1026DD;
     text-align: center;
     line-height: 300px;    
@@ -338,8 +360,8 @@ section p, article p {
 /* /////////////////////////////////////////////// */
 /* Work Experience Grid layout */
 /* /////////////////////////////////////////////// */
-#work-experience {
-    grid-area: work-experience;
+#workExperience {
+    grid-area: workExperience;
     display: grid;
     font-size: 12px;
     grid-template-columns: 100%;
@@ -351,35 +373,35 @@ section p, article p {
                             300px;   /* Work Experience 4 */
 
     grid-template-areas:
-                            "work-experience-h2"
-                            "work-experience-section1"
-                            "work-experience-section2"
-                            "work-experience-section3"
-                            "work-experience-section4";
+                            "workExperience-h2"
+                            "workExperience-section1"
+                            "workExperience-section2"
+                            "workExperience-section3"
+                            "workExperience-section4";
 
 }
 
-#work-experience p{
+#workExperience p{
     background-color: transparent;
     padding: 0;
     margin-bottom: 20px;
 }
 
-#work-experience div {
+#workExperience div {
     background-color: #0C1026DD;
     padding: 20px;
 }
-#work-experience ul{
+#workExperience ul{
     padding-left: 20px;
     list-style-type: square;
 }
-#work-experience li:nth-child(even){
+#workExperience li:nth-child(even){
     list-style-type: none;
     margin-bottom: 10px;
 }
 
-#work-experience section {
-    grid-area: work-experience-section1;
+#workExperience section {
+    grid-area: workExperience-section1;
     display: grid;
     background-image: url("../img/engine.jpg");
     background-size: 100% 100%;
@@ -389,13 +411,13 @@ section p, article p {
                             250px;   /* Text */
 
     grid-template-areas:
-                            ". work-experience-h3-1 work-experience-h3-1"
-                            ". . work-experience-p-1";
+                            ". workExperience-h3-1 workExperience-h3-1"
+                            ". . workExperience-p-1";
                             
 }
 
-#work-experience section:nth-of-type(2) {
-    grid-area: work-experience-section2;
+#workExperience section:nth-of-type(2) {
+    grid-area: workExperience-section2;
     display: grid;
     background-image: url("../img/fiber.jpg");
     grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
@@ -404,14 +426,14 @@ section p, article p {
                             250px;   /* Text */
 
     grid-template-areas:
-                            "work-experience-h3-2 work-experience-h3-2 ."
-                            "work-experience-p-2 . .";
+                            "workExperience-h3-2 workExperience-h3-2 ."
+                            "workExperience-p-2 . .";
                             
 
 }
 
-#work-experience section:nth-of-type(3) {
-    grid-area: work-experience-section3;
+#workExperience section:nth-of-type(3) {
+    grid-area: workExperience-section3;
     display: grid;
     background-image: url("../img/construction.jpg");
     grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
@@ -420,14 +442,14 @@ section p, article p {
                             250px;   /* Text */
 
     grid-template-areas:
-                            ". work-experience-h3-3 work-experience-h3-3"
-                            ". . work-experience-p-3";
+                            ". workExperience-h3-3 workExperience-h3-3"
+                            ". . workExperience-p-3";
                             
 
 }
 
-#work-experience section:nth-of-type(4) {
-    grid-area: work-experience-section4;
+#workExperience section:nth-of-type(4) {
+    grid-area: workExperience-section4;
     display: grid;
     background-image: url("../img/hotel.jpg");
     grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
@@ -436,20 +458,20 @@ section p, article p {
                             250px;   /* Text */
 
     grid-template-areas:
-                            "work-experience-h3-4 work-experience-h3-4 ."
-                            "work-experience-p-4 . .";
+                            "workExperience-h3-4 workExperience-h3-4 ."
+                            "workExperience-p-4 . .";
                             
 
 }
 
-#work-experience section h3 {grid-area: work-experience-h3-1;}
-#work-experience section div {grid-area: work-experience-p-1;}
-#work-experience section:nth-of-type(2) h3 {grid-area: work-experience-h3-2;}
-#work-experience section:nth-of-type(2) div {grid-area: work-experience-p-2;}
-#work-experience section:nth-of-type(3) h3 {grid-area: work-experience-h3-3;}
-#work-experience section:nth-of-type(3) div {grid-area: work-experience-p-3;}
-#work-experience section:nth-of-type(4) h3 {grid-area: work-experience-h3-4;}
-#work-experience section:nth-of-type(4) div {grid-area: work-experience-p-4;}
+#workExperience section h3 {grid-area: workExperience-h3-1;}
+#workExperience section div {grid-area: workExperience-p-1;}
+#workExperience section:nth-of-type(2) h3 {grid-area: workExperience-h3-2;}
+#workExperience section:nth-of-type(2) div {grid-area: workExperience-p-2;}
+#workExperience section:nth-of-type(3) h3 {grid-area: workExperience-h3-3;}
+#workExperience section:nth-of-type(3) div {grid-area: workExperience-p-3;}
+#workExperience section:nth-of-type(4) h3 {grid-area: workExperience-h3-4;}
+#workExperience section:nth-of-type(4) div {grid-area: workExperience-p-4;}
 
 
 
@@ -462,7 +484,7 @@ section p, article p {
     grid-area: education;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 75px 400px;
+    grid-template-rows: 75px 450px;
     grid-template-areas: "education-heading" "education-text";
 }
 
@@ -595,6 +617,16 @@ form {
         max-width: 500px;
     }
 
+    main {
+        font-size: 14px;
+    }
+    main h2 {
+        font-size: 18px;
+    }
+    main h3 {
+        font-size: 16px;
+    }
+
 }
 
 /* //////////////////////////////// */
@@ -604,6 +636,14 @@ form {
 @media screen and (min-width: 1024px){
     body{
         max-width: 800px;
+    }
+
+
+    main h2 {
+        font-size: 20px;
+    }
+    main h3 {
+        font-size: 18px;
     }
 
 }

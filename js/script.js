@@ -24,11 +24,9 @@ summaryCheck.addEventListener("click", () => {
 
     if (summaryCheck.checked === false){
         document.querySelector("#summary").style.display = "none";
-        document.querySelector("#strengths").style.display = "none";
     }
     else{
-        document.querySelector("#summary").style.display = "block";
-        document.querySelector("#strengths").style.display = "block";
+        document.querySelector("#summary").style.display = "grid";
     }
     
 
@@ -48,10 +46,10 @@ portfolioCheck.addEventListener("click", () => {
 workCheck.addEventListener("click", () => {
 
     if (workCheck.checked === false){
-        document.querySelector("#work-experience").style.display = "none";
+        document.querySelector("#workExperience").style.display = "none";
     }
     else{
-        document.querySelector("#work-experience").style.display = "block";
+        document.querySelector("#workExperience").style.display = "block";
     }
     
 });
