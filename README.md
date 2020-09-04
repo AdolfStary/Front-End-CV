@@ -69,7 +69,7 @@ https://stackoverflow.com/questions/21028939/mailto-using-javascript
 
 https://www.w3schools.com/csSref/pr_class_cursor.asp
 
-
+https://www.w3schools.com/jsref/met_element_scrollintoview.asp
 
 
 

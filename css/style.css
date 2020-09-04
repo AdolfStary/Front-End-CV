@@ -245,6 +245,7 @@ section p, article p {
     list-style-type: none;
     line-height: 50px;
     height: 100%;
+    font-size: 14px;
 }
 
 #summary li:hover {

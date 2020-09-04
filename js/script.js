@@ -9,6 +9,11 @@ const portfolioCheck = document.querySelector("#portfolioCheck");
 const workCheck = document.querySelector("#workCheck");
 const educationCheck = document.querySelector("#educationCheck");
 const aboutCheck = document.querySelector("#aboutCheck");
+const summaryLink = document.querySelector("#summaryLink");
+const portfolioLink = document.querySelector("#portfolioLink");
+const workLink = document.querySelector("#workLink");
+const educationLink = document.querySelector("#educationLink");
+const aboutLink = document.querySelector("#aboutLink");
 const myEmail = "astary.dev@hotmail.com";
 
 let swearing;
@@ -122,6 +127,32 @@ menu.addEventListener("click", () => {
     
 
 })
+
+summaryLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector("#summary").scrollIntoView();
+});
+
+portfolioLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector("#portfolio").scrollIntoView();
+});
+
+workLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector("#workExperience").scrollIntoView();
+});
+
+educationLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector("#education").scrollIntoView();
+});
+
+aboutLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector("#about").scrollIntoView();
+});
+
 
 
 
