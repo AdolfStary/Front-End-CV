@@ -8,11 +8,7 @@ font-family: 'Press Start 2P', cursive;
 Colors:
     Aqua: #44E1F2
     Pink: #8E3469
-    Purple: #2A1F73
-    Dark Purple: #131140
-    Very Dark purple: #0C1026
-
-
+    Brighter Pink: 	#DB4CA0;
 */
 
 * {
@@ -39,7 +35,7 @@ html {
     background-attachment: fixed;
     background-position: center;
     background-color: #000000;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -56,11 +52,11 @@ header {
 
 header h1 {
     font-size: 64px;
-    font-family: sans-serif;
-    letter-spacing: 0.25em;
-    color: #ffffff;/*#44E1F2;*/
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
     margin-top: 0.67em;
     margin-bottom: 0.67em;
+    line-height: 1.2em;
     
 }
 
@@ -69,6 +65,7 @@ header h2 {
     color: #44E1F2;
     margin-top: 0.83em;
     margin-bottom: 0.83em;
+    line-height: 1.15em;
 }
 
 nav {
@@ -106,7 +103,7 @@ footer {
 
 a {
     font-weight: bold;
-    color: #8E3469;
+    color: #DB4CA0;
     text-decoration: none;
     padding: 10px;
 }
@@ -120,7 +117,7 @@ em {
 }
 
 strong {
-    color: #8E3469;
+    color: #DB4CA0;
 }
 
 .fab {
@@ -156,13 +153,14 @@ main {
 
     width: 100%;
     color: #aaaaaa;
+    font-size: 16px;
     
 }
 
 main h2 {
     font-family: 'Press Start 2P', cursive;
     color: #ffffff;/*#44E1F2;*/
-    font-size: 14px;
+    font-size: 1.3em;
     text-align: center;
     background-color: #000000;/*#131140EE;*/
     line-height: 75px;
@@ -172,8 +170,8 @@ main h2 {
 
 main h3 {
     font-family: 'Press Start 2P', cursive;
-    color: #8E3469;
-    font-size: 12px;
+    color: #DB4CA0;
+    font-size: 0.9em;
     text-align: right;
     padding-right: 20px;
     background-color: #000000;/*#131140DD;*/
@@ -195,7 +193,7 @@ main article {
 }
 
 main section {
-    border-top: 2px solid #8E3469;
+    border-top: 2px solid #DB4CA0;
 
 }
 
@@ -207,7 +205,6 @@ main article p{
 section p, article p {
     background-color: #0C1026DD;
     padding: 20px;
-    font-size: 12px;
 }
  
 
@@ -245,11 +242,10 @@ section p, article p {
     list-style-type: none;
     line-height: 50px;
     height: 100%;
-    font-size: 14px;
 }
 
 #summary li:hover {
-    color: #8E3469;
+    color: #DB4CA0;
 }
 
 #summary section:nth-of-type(2) h3{
@@ -364,7 +360,6 @@ section p, article p {
 #workExperience {
     grid-area: workExperience;
     display: grid;
-    font-size: 12px;
     grid-template-columns: 100%;
     grid-template-rows: 
                             75px    /* Work Experience h2 */
@@ -505,7 +500,6 @@ section p, article p {
     grid-area: education-text;
     background-color: #0C1026DD;
     padding: 20px;
-    font-size: 12px;
 }
 
 /* //////////////////////////////// */
@@ -536,12 +530,13 @@ section p, article p {
     grid-area: about-text-1;
     background-image: url("../img/canada.jpg");
     background-size: 100% 100%;
-    font-size: 12px;
     text-align: left;
+   
 }
 
 #about p {
     padding: 20px;
+    width: 60%;
 }
 
 #about div:nth-of-type(2) {
@@ -581,10 +576,12 @@ form {
 
 #name {
     margin: 20px;
+    width: 80%;
 }
 
 #subject {
     margin-bottom: 20px;
+    width: 80%;
 }
 
 #message {
@@ -598,9 +595,9 @@ form {
 
 #sendButton {
     margin: 20px;
-    border: 2px solid #8E3469;
+    border: 2px solid #DB4CA0;
     font-family: 'Press Start 2P', cursive;
-    color: #8E3469;
+    color: #DB4CA0;
     background-color: #0C1026BB;
     padding: 20px;
 }
@@ -637,8 +634,12 @@ form {
 @media screen and (min-width: 1024px){
     body{
         max-width: 800px;
+        
     }
 
+    main {
+        font-size: 20px;
+    }
 
     main h2 {
         font-size: 20px;
