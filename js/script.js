@@ -27,11 +27,13 @@ let validInput;
 
 summaryCheck.addEventListener("click", () => {
 
-    if (summaryCheck.checked === false){
+    if (summaryCheck.className === "fas fa-eye"){
         document.querySelector("#summary").style.display = "none";
+        summaryCheck.className = "fas fa-eye-slash";
     }
     else{
         document.querySelector("#summary").style.display = "grid";
+        summaryCheck.className = "fas fa-eye";
     }
     
 
@@ -39,44 +41,52 @@ summaryCheck.addEventListener("click", () => {
 
 portfolioCheck.addEventListener("click", () => {
 
-    if (portfolioCheck.checked === false){
+    if (portfolioCheck.className === "fas fa-eye"){
         document.querySelector("#portfolio").style.display = "none";
+        portfolioCheck.className = "fas fa-eye-slash";
     }
     else{
         document.querySelector("#portfolio").style.display = "block";
+        portfolioCheck.className = "fas fa-eye";
     }
     
 });
 
 workCheck.addEventListener("click", () => {
 
-    if (workCheck.checked === false){
+    if (workCheck.className === "fas fa-eye"){
         document.querySelector("#workExperience").style.display = "none";
+        workCheck.className = "fas fa-eye-slash";
     }
     else{
         document.querySelector("#workExperience").style.display = "block";
+        workCheck.className = "fas fa-eye";
     }
     
 });
 
 educationCheck.addEventListener("click", () => {
 
-    if (educationCheck.checked === false){
+    if (educationCheck.className === "fas fa-eye"){
         document.querySelector("#education").style.display = "none";
+        educationCheck.className = "fas fa-eye-slash";
     }
     else{
         document.querySelector("#education").style.display = "block";
+        educationCheck.className = "fas fa-eye";
     }
     
 });
 
 aboutCheck.addEventListener("click", () => {
 
-    if (aboutCheck.checked === false){
+    if (aboutCheck.className === "fas fa-eye"){
         document.querySelector("#about").style.display = "none";
+        aboutCheck.className = "fas fa-eye-slash";
     }
     else{
         document.querySelector("#about").style.display = "block";
+        aboutCheck.className = "fas fa-eye";
     }
     
 });

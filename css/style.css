@@ -54,7 +54,7 @@ header h1 {
     font-size: 64px;
     font-family: 'Press Start 2P', cursive;
     color: #ffffff;
-    margin-top: 0.67em;
+    margin-top: 200px;
     margin-bottom: 0.67em;
     line-height: 1.2em;
     
@@ -64,7 +64,7 @@ header h2 {
     font-family: 'Press Start 2P', cursive;
     color: #44E1F2;
     margin-top: 0.83em;
-    margin-bottom: 0.83em;
+    margin-bottom: 75px;
     line-height: 1.15em;
 }
 
@@ -105,7 +105,7 @@ a {
     font-weight: bold;
     color: #DB4CA0;
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
 }
 a:hover {
     color: #44E1F2;
@@ -197,14 +197,10 @@ main section {
 
 }
 
-main article p{
-    padding-left: 20px;
-    padding-right: 20px;
-
-}
-section p, article p {
-    background-color: #0C1026DD;
+main p{
     padding: 20px;
+    background-color: #0C1026DD;
+
 }
  
 
