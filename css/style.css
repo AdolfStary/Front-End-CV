@@ -79,7 +79,6 @@ header h2 {
 }
 
 nav {
-    visibility: hidden;
     position: fixed;
     text-align: left;
     background-color: #0C1026EE;
@@ -630,6 +629,14 @@ form {
     color: #DB4CA0;
     background-color: #0C1026EE;
     padding: 20px;
+}
+
+.hidden {
+    visibility: hidden !important;
+}
+
+.displayNone {
+    display: none !important;
 }
 
 

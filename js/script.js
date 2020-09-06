@@ -29,11 +29,11 @@ let validInput;
 summaryCheck.addEventListener("click", () => {
 
     if (summaryCheck.className === "fas fa-eye"){
-        document.querySelector("#summary").style.display = "none";
+        document.querySelector("#summary").classList.add("displayNone");
         summaryCheck.className = "fas fa-eye-slash";
     }
     else{
-        document.querySelector("#summary").style.display = "grid";
+        document.querySelector("#summary").classList.remove("displayNone");
         summaryCheck.className = "fas fa-eye";
     }
     
@@ -43,11 +43,11 @@ summaryCheck.addEventListener("click", () => {
 portfolioCheck.addEventListener("click", () => {
 
     if (portfolioCheck.className === "fas fa-eye"){
-        document.querySelector("#portfolio").style.display = "none";
+        document.querySelector("#portfolio").classList.add("displayNone");
         portfolioCheck.className = "fas fa-eye-slash";
     }
     else{
-        document.querySelector("#portfolio").style.display = "block";
+        document.querySelector("#portfolio").classList.remove("displayNone");
         portfolioCheck.className = "fas fa-eye";
     }
     
@@ -56,11 +56,11 @@ portfolioCheck.addEventListener("click", () => {
 workCheck.addEventListener("click", () => {
 
     if (workCheck.className === "fas fa-eye"){
-        document.querySelector("#workExperience").style.display = "none";
+        document.querySelector("#workExperience").classList.add("displayNone");
         workCheck.className = "fas fa-eye-slash";
     }
     else{
-        document.querySelector("#workExperience").style.display = "block";
+        document.querySelector("#workExperience").classList.remove("displayNone");
         workCheck.className = "fas fa-eye";
     }
     
@@ -69,11 +69,11 @@ workCheck.addEventListener("click", () => {
 educationCheck.addEventListener("click", () => {
 
     if (educationCheck.className === "fas fa-eye"){
-        document.querySelector("#education").style.display = "none";
+        document.querySelector("#education").classList.add("displayNone");
         educationCheck.className = "fas fa-eye-slash";
     }
     else{
-        document.querySelector("#education").style.display = "block";
+        document.querySelector("#education").classList.remove("displayNone");
         educationCheck.className = "fas fa-eye";
     }
     
@@ -82,11 +82,11 @@ educationCheck.addEventListener("click", () => {
 aboutCheck.addEventListener("click", () => {
 
     if (aboutCheck.className === "fas fa-eye"){
-        document.querySelector("#about").style.display = "none";
+        document.querySelector("#about").classList.add("displayNone");
         aboutCheck.className = "fas fa-eye-slash";
     }
     else{
-        document.querySelector("#about").style.display = "grid";
+        document.querySelector("#about").classList.remove("displayNone");
         aboutCheck.className = "fas fa-eye";
     }
     
@@ -127,13 +127,13 @@ messageForm.addEventListener("submit", (event) => {
 
 menu.addEventListener("click", () => {
 
-    if (menuList.style.visibility != "visible")
+    if (menuList.classList.contains("hidden"))
     {
-        menuList.style.visibility = "visible";
+        menuList.classList.remove("hidden");
     }
     else
     {
-        menuList.style.visibility = "hidden";
+        menuList.classList.add("hidden");
     }
     
 
