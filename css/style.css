@@ -528,27 +528,51 @@ main p{
     text-align: center;
 }
 #about iframe {
+    grid-area: player;
     display: block;
     margin: 20px auto;
 
 }
 
-#about div {
+#about section {
+    display: grid;
+    grid-template-columns: 20% 10% 70%;
+    grid-template-rows: 50px auto;
+    grid-template-areas: ". about-section-1-h3 about-section-1-h3" ". . about-section-1-p";
     grid-area: about-text-1;
-    background-image: url("../img/canada.jpg");
+    background-image: url("../img/code.jpg");
     background-size: 100% 100%;
     text-align: left;
    
 }
 
-#about p {
-    padding: 20px;
-    width: 60%;
+#about section h3 {
+    grid-area: about-section-1-h3;
 }
 
-#about div:nth-of-type(2) {
+#about section div {
+    grid-area: about-section-1-p;
+}
+
+#about p {
+    padding: 20px;
+}
+
+#about section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 70% 10% 20%;
+    grid-template-rows: 50px auto auto;
+    grid-template-areas: "about-section-2-h3 about-section-2-h3 ." "about-section-2-p . ." "player player player";
     grid-area: about-text-2;
-    background-image: url("../img/music.jpg");
+    background-image: url("../img/music.png");
+}
+
+#about section:nth-of-type(2) h3 {
+    grid-area: about-section-2-h3;
+}
+
+#about section:nth-of-type(2) div {
+    grid-area: about-section-2-p;
 }
 
 

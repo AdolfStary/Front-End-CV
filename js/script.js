@@ -86,7 +86,7 @@ aboutCheck.addEventListener("click", () => {
         aboutCheck.className = "fas fa-eye-slash";
     }
     else{
-        document.querySelector("#about").style.display = "block";
+        document.querySelector("#about").style.display = "grid";
         aboutCheck.className = "fas fa-eye";
     }
     
