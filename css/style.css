@@ -329,11 +329,14 @@ main p{
 #portfolio h3{grid-area: portfolio-h3-1;}
 #portfolio p{
     grid-area: portfolio-p-1;
-    background-color: #0C1026FF;
+    background-color: #0C1026F8;
 }
 
 #portfolio section:nth-of-type(2) h3{grid-area: portfolio-h3-2;}
-#portfolio section:nth-of-type(2) p{grid-area: portfolio-p-2;}
+#portfolio section:nth-of-type(2) p{
+    grid-area: portfolio-p-2;
+    background-color: #0C1026EE;
+}
 
 #video {
     grid-area: video;
