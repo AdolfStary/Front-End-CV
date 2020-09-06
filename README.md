@@ -71,6 +71,8 @@ https://www.w3schools.com/csSref/pr_class_cursor.asp
 
 https://www.w3schools.com/jsref/met_element_scrollintoview.asp
 
+https://stackoverflow.com/questions/5382254/how-can-i-override-style-info-from-a-css-class-in-the-body-of-a-page
+
 
 
 
