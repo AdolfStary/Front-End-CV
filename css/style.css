@@ -273,7 +273,6 @@ main p{
 #portfolio {
     grid-area: portfolio;
     display: grid;
-    background-image: url("../img/UnrealGame.mp4");
     grid-template-columns: 100%;
     grid-template-rows: 
                             75px    /* Portfolio h2 */
@@ -290,14 +289,16 @@ main p{
 #portfolio section {
     grid-area: portfolio-section1;
     display: grid;
+    background-image: url("../img/UnrealGame.gif");
+    background-size: 100% 100%;
     grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
     grid-template-rows: 
                             50px    /* Portfolio h3 */
                             250px;   /* Text */
 
     grid-template-areas:
-                            "empty portfolio-h3-1 portfolio-h3-1"
-                            "video video portfolio-p-1";
+                            ". portfolio-h3-1 portfolio-h3-1"
+                            ". . portfolio-p-1";
                             
 }
 
@@ -328,7 +329,7 @@ main p{
 #portfolio h3{grid-area: portfolio-h3-1;}
 #portfolio p{
     grid-area: portfolio-p-1;
-    background-color: #0C1026F8;
+    background-color: #0C1026CC;
 }
 
 #portfolio section:nth-of-type(2) h3{grid-area: portfolio-h3-2;}
@@ -337,25 +338,6 @@ main p{
     background-color: #0C1026EE;
 }
 
-#video {
-    grid-area: video;
-    text-align: center;
-    display: flex;
-    background-color: #0C1026EE;
-    width: 100%;
-    vertical-align: middle;
-
-}
-
-#video video {
-    width: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-#empty {
-    grid-area: empty;
-    background-color: #0C1026EE;
-}
 
 .play {
     font-family: 'Press Start 2P', cursive;
