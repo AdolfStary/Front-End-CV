@@ -290,7 +290,7 @@ main p{
 #p-three {
     grid-area: portfolio-section3;
     display: grid;
-    background-image: url("");
+    background-image: url("../img/milestone2b.png");
     background-size: 100% 100%;
     grid-template-columns:  70% 10% 20%;
     grid-template-rows: 
