@@ -276,17 +276,34 @@ main p{
     grid-template-columns: 100%;
     grid-template-rows: 
                             75px    /* Portfolio h2 */
-                            300px   /* Project 1 */
-                            300px;   /* Project 2 */
+                            450px   /* Project 1 */
+                            450px   /* Project 2 */
+                            450px;  /* Project 3 */
 
     grid-template-areas:
                             "portfolio-h2"
+                            "portfolio-section3"
                             "portfolio-section1"
                             "portfolio-section2";
 
 }
+#p-three {
+    grid-area: portfolio-section3;
+    display: grid;
+    background-image: url("");
+    background-size: 100% 100%;
+    grid-template-columns:  70% 10% 20%;
+    grid-template-rows: 
+                            50px    /* Portfolio h3 */
+                            400px;   /* Text */
 
-#portfolio section {
+    grid-template-areas:
+                            "portfolio-h3-1 portfolio-h3-1 ."
+                            "portfolio-p-1 . . ";
+                            
+}
+
+#p-two {
     grid-area: portfolio-section1;
     display: grid;
     background-image: url("../img/UnrealGame.gif");
@@ -294,7 +311,7 @@ main p{
     grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
     grid-template-rows: 
                             50px    /* Portfolio h3 */
-                            250px;   /* Text */
+                            400px;   /* Text */
 
     grid-template-areas:
                             ". portfolio-h3-1 portfolio-h3-1"
@@ -302,7 +319,7 @@ main p{
                             
 }
 
-#portfolio section:nth-of-type(2) {
+#p-one {
     grid-area: portfolio-section2;
     display: grid;
     background-image: url("../img/hangman.png");
@@ -310,7 +327,7 @@ main p{
     grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
     grid-template-rows: 
                             50px    /* Portfolio h3 */
-                            250px;   /* Text */
+                            400px;   /* Text */
 
     grid-template-areas:
                             "portfolio-h3-2 portfolio-h3-2 ."
@@ -318,7 +335,7 @@ main p{
                             
 
 }
-#portfolio section:nth-of-type(2):hover {
+#p-one:hover {
 
     background-image: url("../img/hangmanCode.png");
     background-size: auto;
@@ -332,8 +349,8 @@ main p{
     background-color: #0C1026CC;
 }
 
-#portfolio section:nth-of-type(2) h3{grid-area: portfolio-h3-2;}
-#portfolio section:nth-of-type(2) p{
+#p-one h3{grid-area: portfolio-h3-2;}
+#p-one p{
     grid-area: portfolio-p-2;
     background-color: #0C1026EE;
 }
@@ -666,6 +683,22 @@ form {
     main {
         font-size: 16px;
         line-height: 1.25em;
+    }
+
+    #p-three {
+        grid-area: portfolio-section3;
+        display: grid;
+        background-image: url("");
+        background-size: 100% 100%;
+        grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
+        grid-template-rows: 
+                                50px    /* Portfolio h3 */
+                                400px;   /* Text */
+    
+        grid-template-areas:
+                                "portfolio-h3-1 portfolio-h3-1 ."
+                                "portfolio-p-1 . . ";
+                                
     }
 
 }
