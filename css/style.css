@@ -290,7 +290,7 @@ main p{
 #p-three {
     grid-area: portfolio-section3;
     display: grid;
-    background-image: url("../img/milestone2b.png");
+    background-image: url("../img/milestone2a.png");
     background-size: 100% 100%;
     grid-template-columns:  70% 10% 20%;
     grid-template-rows: 
@@ -686,10 +686,6 @@ form {
     }
 
     #p-three {
-        grid-area: portfolio-section3;
-        display: grid;
-        background-image: url("");
-        background-size: 100% 100%;
         grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
         grid-template-rows: 
                                 50px    /* Portfolio h3 */
