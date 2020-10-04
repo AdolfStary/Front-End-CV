@@ -308,7 +308,7 @@ main p{
     display: grid;
     background-image: url("../img/UnrealGame.gif");
     background-size: 100% 100%;
-    grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
+    grid-template-columns:  20% 10% 70%;
     grid-template-rows: 
                             50px    /* Portfolio h3 */
                             400px;   /* Text */
@@ -697,6 +697,9 @@ form {
                                 
     }
 
+    #p-two {
+        grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
+    }
 }
 
 
