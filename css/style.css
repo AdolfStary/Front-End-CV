@@ -324,7 +324,7 @@ main p{
     display: grid;
     background-image: url("../img/hangman.png");
     background-size: 100% 100%;
-    grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
+    grid-template-columns:  70% 10% 20%;
     grid-template-rows: 
                             50px    /* Portfolio h3 */
                             400px;   /* Text */
@@ -699,6 +699,10 @@ form {
 
     #p-two {
         grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
+    }
+
+    #p-one {
+        grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
     }
 }
 
