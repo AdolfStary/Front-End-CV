@@ -276,17 +276,36 @@ main p{
     grid-template-columns: 100%;
     grid-template-rows: 
                             75px    /* Portfolio h2 */
-                            450px   /* Project 1 */
+                            450px  /* Project 4 */
+                            450px   /* Project 3 */
                             450px   /* Project 2 */
-                            450px;  /* Project 3 */
+                            450px;  /* Project 1 */
 
     grid-template-areas:
                             "portfolio-h2"
+                            "portfolio-section4"
                             "portfolio-section3"
                             "portfolio-section1"
                             "portfolio-section2";
 
 }
+
+#p-four {
+    grid-area: portfolio-section4;
+    display: grid;
+    background-image: url("../img/wellnesstracker.gif");
+    background-size: 100% 100%;
+    grid-template-columns:  20% 10% 70%;
+    grid-template-rows: 
+                            50px    /* Portfolio h3 */
+                            400px;   /* Text */
+
+    grid-template-areas:
+                            ". portfolio-h3-1 portfolio-h3-1"
+                            ". . portfolio-p-1";
+                            
+}
+
 #p-three {
     grid-area: portfolio-section3;
     display: grid;
@@ -683,6 +702,9 @@ form {
     main {
         font-size: 16px;
         line-height: 1.25em;
+    }
+    #p-four {
+        grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
     }
 
     #p-three {
