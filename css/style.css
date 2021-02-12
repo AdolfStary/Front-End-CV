@@ -12,209 +12,196 @@ Colors:
 */
 
 * {
-    padding: 0px;
-    margin: 0;
+  padding: 0px;
+  margin: 0;
 }
 
 .fas {
-    cursor: pointer;
+  cursor: pointer;
 }
 .fa-eye-slash {
-    color: #777777;
+  color: #777777;
 }
 
 .fa-eye {
-    padding-right: 2px;
+  padding-right: 2px;
 }
 
 .screen-reader-text {
-    border: 0;
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    word-wrap: normal !important;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
 }
 
 html {
-    background-image: url("../img/bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 header h1 {
-    font-size: 64px;
-    font-family: 'Press Start 2P', cursive;
-    color: #ffffff;
-    margin-top: 320px;
-    margin-bottom: 0.67em;
-    line-height: 1.2em;
-    
+  font-size: 64px;
+  font-family: "Press Start 2P", cursive;
+  color: #ffffff;
+  margin-top: 320px;
+  margin-bottom: 0.67em;
+  line-height: 1.2em;
 }
 
 header h2 {
-    font-family: 'Press Start 2P', cursive;
-    color: #44E1F2;
-    margin-top: 0.83em;
-    margin-bottom: 75px;
-    line-height: 1.15em;
+  font-family: "Press Start 2P", cursive;
+  color: #44e1f2;
+  margin-top: 0.83em;
+  margin-bottom: 75px;
+  line-height: 1.15em;
 }
 
 nav {
-    position: fixed;
-    text-align: left;
-    background-color: #0C1026EE;
-    border: 1px solid #000000;
-    top: 80px;
-    right: 10px;
-    color: #bbbbbb;
+  position: fixed;
+  text-align: left;
+  background-color: #0c1026ee;
+  border: 1px solid #000000;
+  top: 80px;
+  right: 10px;
+  color: #bbbbbb;
 }
 
 nav ul {
-    list-style-type: none;
-    padding-left: 0;
-    
+  list-style-type: none;
+  padding-left: 0;
 }
 
 nav li {
-    margin: 10px;
-    
+  margin: 10px;
 }
 
-#summaryCheck, #portfolioCheck, #workCheck, #aboutCheck, #educationCheck {
-    margin-right: 10px;
-
+#summaryCheck,
+#portfolioCheck,
+#workCheck,
+#aboutCheck,
+#educationCheck {
+  margin-right: 10px;
 }
 
 footer {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-family: 'Press Start 2P', cursive;
-    color: #ffffff;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Press Start 2P", cursive;
+  color: #ffffff;
 }
 
 a {
-    font-weight: bold;
-    color: #DB4CA0;
-    text-decoration: none;
-    margin: 20px;
+  font-weight: bold;
+  color: #db4ca0;
+  text-decoration: none;
+  margin: 20px;
 }
 a:hover {
-    color: #44E1F2;
+  color: #44e1f2;
 }
 
 em {
-    color: #44E1F2;
-    font-weight: bold;
+  color: #44e1f2;
+  font-weight: bold;
 }
 
 strong {
-    color: #DB4CA0;
+  color: #db4ca0;
 }
 
 .fab {
-    margin: 20px;
-    font-size: 64px;
-    color: #ffffff;
+  margin: 20px;
+  font-size: 64px;
+  color: #ffffff;
 }
 
 #menu {
-    position: fixed;
-    top: -10px;
-    right: -10px;
-    padding: 10px;
-    margin: 20px;
-    font-size: 48px;
-    color: #ffffff;
-    background-color: #0C1026EE;
-    border: 1px solid #000000;
+  position: fixed;
+  top: -10px;
+  right: -10px;
+  padding: 10px;
+  margin: 20px;
+  font-size: 48px;
+  color: #ffffff;
+  background-color: #0c1026ee;
+  border: 1px solid #000000;
 }
 
 #menu:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-
-
-
-
 
 /* //////////////////////////////// */
 /* MAIN */
 /* //////////////////////////////// */
 main {
-
-    width: 100%;
-    color: #bbbbbb;
-    font-size: 14px;
-    
+  width: 100%;
+  color: #bbbbbb;
+  font-size: 14px;
 }
 
 main h2 {
-    font-family: 'Press Start 2P', cursive;
-    color: #ffffff;/*#44E1F2;*/
-    font-size: 1.3em;
-    text-align: center;
-    background-color: #000000;/*#131140EE;*/
-    line-height: 75px;
-    vertical-align: middle;
-
+  font-family: "Press Start 2P", cursive;
+  color: #ffffff; /*#44E1F2;*/
+  font-size: 1.3em;
+  text-align: center;
+  background-color: #000000; /*#131140EE;*/
+  line-height: 75px;
+  vertical-align: middle;
 }
 
 main h3 {
-    font-family: 'Press Start 2P', cursive;
-    color: #DB4CA0;
-    font-size: 0.9em;
-    text-align: right;
-    padding-right: 20px;
-    background-color: #000000;/*#131140DD;*/
-    line-height: 50px;
-    vertical-align: middle;
-
+  font-family: "Press Start 2P", cursive;
+  color: #db4ca0;
+  font-size: 0.9em;
+  text-align: right;
+  padding-right: 20px;
+  background-color: #000000; /*#131140DD;*/
+  line-height: 50px;
+  vertical-align: middle;
 }
 
 .leftText {
-    text-align: left;
-    padding-left: 20px;
+  text-align: left;
+  padding-left: 20px;
 }
 
 main article {
-    margin-bottom: 20px;
-    border-radius: 4px;
-    border-bottom: 2px solid #232323;
-
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border-bottom: 2px solid #232323;
 }
 
 main section {
-    border-top: 2px solid #DB4CA0;
-
+  border-top: 2px solid #db4ca0;
 }
 
-main p{
-    padding: 20px;
-    background-color: #0C1026EE;
-
+main p {
+  padding: 20px;
+  background-color: #0c1026ee;
 }
- 
-
 
 /* /////////////////////////////////////////////// */
 /* Grid Layout for Elements */
@@ -223,312 +210,332 @@ main p{
 /* Summary */
 /* /////////////////////////////////////////////// */
 #summary {
-    grid-area: summary;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 75px 50px 300px;
-    grid-template-areas: "summary-heading summary-heading" "qualities-heading skills-heading" "qualities-text skills-text";
+  grid-area: summary;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 75px 50px 300px;
+  grid-template-areas: "summary-heading summary-heading" "qualities-heading skills-heading" "qualities-text skills-text";
 }
 
 #summary h2 {
-    grid-area: summary-heading;
-    padding-right: 0;
+  grid-area: summary-heading;
+  padding-right: 0;
 }
 #summary h3 {
-    grid-area: qualities-heading;
-    text-align: center;
-    padding-right: 0;
+  grid-area: qualities-heading;
+  text-align: center;
+  padding-right: 0;
 }
 #summary div {
-    grid-area: qualities-text;
-    background-color: #0C1026EE;
-    text-align: center;
-    line-height: 300px;
+  grid-area: qualities-text;
+  background-color: #0c1026ee;
+  text-align: center;
+  line-height: 300px;
 }
 #summary ul {
-    list-style-type: none;
-    line-height: 50px;
-    height: 100%;
+  list-style-type: none;
+  line-height: 50px;
+  height: 100%;
 }
 
 #summary li:hover {
-    color: #DB4CA0;
-    cursor: default;
+  color: #db4ca0;
+  cursor: default;
 }
 
-#summary section:nth-of-type(2) h3{
-    grid-area: skills-heading;
+#summary section:nth-of-type(2) h3 {
+  grid-area: skills-heading;
 }
 
-#summary section:nth-of-type(2) div{
-    grid-area: skills-text;
+#summary section:nth-of-type(2) div {
+  grid-area: skills-text;
 }
-
-
-
 
 /* /////////////////////////////////////////////// */
 /* Portfolio Grid layout */
 /* /////////////////////////////////////////////// */
 #portfolio {
-    grid-area: portfolio;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 
-                            75px    /* Portfolio h2 */
-                            450px  /* Project 4 */
-                            450px   /* Project 3 */
-                            450px   /* Project 2 */
-                            450px;  /* Project 1 */
+  grid-area: portfolio;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows:
+    75px /* Portfolio h2 */
+    450px /* Project 4 */
+    450px /* Project 3 */
+    450px /* Project 2 */
+    450px; /* Project 1 */
 
-    grid-template-areas:
-                            "portfolio-h2"
-                            "portfolio-section4"
-                            "portfolio-section3"
-                            "portfolio-section1"
-                            "portfolio-section2";
-
+  grid-template-areas:
+    "portfolio-h2"
+    "portfolio-section4"
+    "portfolio-section3"
+    "portfolio-section1"
+    "portfolio-section2";
 }
 
 #p-four {
-    grid-area: portfolio-section4;
-    display: grid;
-    background-image: url("../img/wellnesstracker.gif");
-    background-size: 100% 100%;
-    grid-template-columns:  20% 10% 70%;
-    grid-template-rows: 
-                            50px    /* Portfolio h3 */
-                            400px;   /* Text */
+  grid-area: portfolio-section4;
+  display: grid;
+  background-image: url("../img/wellnesstracker.gif");
+  background-size: 100% 100%;
+  grid-template-columns: 20% 10% 70%;
+  grid-template-rows:
+    50px /* Portfolio h3 */
+    400px; /* Text */
 
-    grid-template-areas:
-                            ". portfolio-h3-1 portfolio-h3-1"
-                            ". . portfolio-p-1";
-                            
+  grid-template-areas:
+    ". portfolio-h3-1 portfolio-h3-1"
+    ". . portfolio-p-1";
 }
 
 #p-three {
-    grid-area: portfolio-section3;
-    display: grid;
-    background-image: url("../img/milestone2a.png");
-    background-size: 100% 100%;
-    grid-template-columns:  70% 10% 20%;
-    grid-template-rows: 
-                            50px    /* Portfolio h3 */
-                            400px;   /* Text */
+  grid-area: portfolio-section3;
+  display: grid;
+  background-image: url("../img/milestone2a.png");
+  background-size: 100% 100%;
+  grid-template-columns: 70% 10% 20%;
+  grid-template-rows:
+    50px /* Portfolio h3 */
+    400px; /* Text */
 
-    grid-template-areas:
-                            "portfolio-h3-1 portfolio-h3-1 ."
-                            "portfolio-p-1 . . ";
-                            
+  grid-template-areas:
+    "portfolio-h3-1 portfolio-h3-1 ."
+    "portfolio-p-1 . . ";
 }
 
 #p-two {
-    grid-area: portfolio-section1;
-    display: grid;
-    background-image: url("../img/UnrealGame.gif");
-    background-size: 100% 100%;
-    grid-template-columns:  20% 10% 70%;
-    grid-template-rows: 
-                            50px    /* Portfolio h3 */
-                            400px;   /* Text */
+  grid-area: portfolio-section1;
+  display: grid;
+  background-image: url("../img/UnrealGame.gif");
+  background-size: 100% 100%;
+  grid-template-columns: 20% 10% 70%;
+  grid-template-rows:
+    50px /* Portfolio h3 */
+    400px; /* Text */
 
-    grid-template-areas:
-                            ". portfolio-h3-1 portfolio-h3-1"
-                            ". . portfolio-p-1";
-                            
+  grid-template-areas:
+    ". portfolio-h3-1 portfolio-h3-1"
+    ". . portfolio-p-1";
 }
 
 #p-one {
-    grid-area: portfolio-section2;
-    display: grid;
-    background-image: url("../img/hangman.png");
-    background-size: 100% 100%;
-    grid-template-columns:  70% 10% 20%;
-    grid-template-rows: 
-                            50px    /* Portfolio h3 */
-                            400px;   /* Text */
+  grid-area: portfolio-section2;
+  display: grid;
+  background-image: url("../img/hangman.png");
+  background-size: 100% 100%;
+  grid-template-columns: 70% 10% 20%;
+  grid-template-rows:
+    50px /* Portfolio h3 */
+    400px; /* Text */
 
-    grid-template-areas:
-                            "portfolio-h3-2 portfolio-h3-2 ."
-                            "portfolio-p-2 . .";
-                            
-
+  grid-template-areas:
+    "portfolio-h3-2 portfolio-h3-2 ."
+    "portfolio-p-2 . .";
 }
 #p-one:hover {
-
-    background-image: url("../img/hangmanCode.png");
-    background-size: auto;
-
+  background-image: url("../img/hangmanCode.png");
+  background-size: auto;
 }
 
-#portfolio h2{grid-area: portfolio-h2;}
-#portfolio h3{grid-area: portfolio-h3-1;}
-#portfolio p{
-    grid-area: portfolio-p-1;
-    background-color: #0C1026CC;
+#portfolio h2 {
+  grid-area: portfolio-h2;
+}
+#portfolio h3 {
+  grid-area: portfolio-h3-1;
+}
+#portfolio p {
+  grid-area: portfolio-p-1;
+  background-color: #0c1026cc;
 }
 
-#p-one h3{grid-area: portfolio-h3-2;}
-#p-one p{
-    grid-area: portfolio-p-2;
-    background-color: #0C1026EE;
+#p-one h3 {
+  grid-area: portfolio-h3-2;
 }
-
+#p-one p {
+  grid-area: portfolio-p-2;
+  background-color: #0c1026ee;
+}
 
 .play {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 16px;
-    margin-left: 10px; 
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+  margin-left: 10px;
 }
-
-
 
 /* /////////////////////////////////////////////// */
 /* Work Experience Grid layout */
 /* /////////////////////////////////////////////// */
 #workExperience {
-    grid-area: workExperience;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 
-                            75px    /* Work Experience h2 */
-                            300px   /* Work Experience 1 */
-                            300px   /* Work Experience 2 */
-                            300px   /* Work Experience 3 */
-                            300px;   /* Work Experience 4 */
+  grid-area: workExperience;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows:
+    75px /* Work Experience h2 */
+    300px /* Work Experience 1 */
+    300px /* Work Experience 2 */
+    300px /* Work Experience 3 */
+    300px /* Work Experience 4 */
+    300px; /* Work Experience 5 */
 
-    grid-template-areas:
-                            "workExperience-h2"
-                            "workExperience-section1"
-                            "workExperience-section2"
-                            "workExperience-section3"
-                            "workExperience-section4";
-
+  grid-template-areas:
+    "workExperience-h2"
+    "workExperience-section1"
+    "workExperience-section2"
+    "workExperience-section3"
+    "workExperience-section4"
+    "workExperience-section5";
 }
 
-#workExperience p{
-    background-color: transparent;
-    padding: 0;
-    margin-bottom: 20px;
+#workExperience p {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 #workExperience div {
-    background-color: #0C1026EE;
-    padding: 15px;
+  background-color: #0c1026ee;
+  padding: 15px;
 }
-#workExperience ul{
-    padding-left: 20px;
-    list-style-type: square;
+#workExperience ul {
+  padding-left: 20px;
+  list-style-type: square;
 }
-#workExperience li:nth-child(even){
-    list-style-type: none;
-    margin-bottom: 10px;
+#workExperience li:nth-child(even) {
+  list-style-type: none;
+  margin-bottom: 10px;
 }
 
 #workExperience section {
-    grid-area: workExperience-section1;
-    display: grid;
-    background-image: url("../img/engine.jpg");
-    background-size: 100% 100%;
-    grid-template-columns:  20% 10% 70%;
-    grid-template-rows: 
-                            50px    /* h3 */
-                            250px;   /* Text */
+  grid-area: workExperience-section1;
+  display: grid;
+  background-image: url("../img/hangmanCode.png");
+  background-size: 100% 100%;
+  grid-template-columns: 70% 10% 20%;
+  grid-template-rows:
+    50px /* h3 */
+    250px; /* Text */
 
-    grid-template-areas:
-                            ". workExperience-h3-1 workExperience-h3-1"
-                            ". . workExperience-p-1";
-                            
+  grid-template-areas:
+    "workExperience-h3-5 workExperience-h3-5 ."
+    "workExperience-p-5 . . ";
 }
 
 #workExperience section:nth-of-type(2) {
-    grid-area: workExperience-section2;
-    display: grid;
-    background-image: url("../img/fiber.jpg");
-    grid-template-columns:  70% 10% 20%;
-    grid-template-rows: 
-                            50px    /* h3 */
-                            250px;   /* Text */
+  grid-area: workExperience-section2;
+  display: grid;
+  background-image: url("../img/engine.jpg");
+  background-size: 100% 100%;
+  grid-template-columns: 20% 10% 70%;
+  grid-template-rows:
+    50px /* h3 */
+    250px; /* Text */
 
-    grid-template-areas:
-                            "workExperience-h3-2 workExperience-h3-2 ."
-                            "workExperience-p-2 . .";
-                            
-
+  grid-template-areas:
+    ". workExperience-h3-1 workExperience-h3-1"
+    ". . workExperience-p-1";
 }
 
 #workExperience section:nth-of-type(3) {
-    grid-area: workExperience-section3;
-    display: grid;
-    background-image: url("../img/construction.jpg");
-    grid-template-columns:  20% 10% 70%;
-    grid-template-rows: 
-                            50px    /* h3 */
-                            250px;   /* Text */
+  grid-area: workExperience-section3;
+  display: grid;
+  background-image: url("../img/fiber.jpg");
+  grid-template-columns: 70% 10% 20%;
+  grid-template-rows:
+    50px /* h3 */
+    250px; /* Text */
 
-    grid-template-areas:
-                            ". workExperience-h3-3 workExperience-h3-3"
-                            ". . workExperience-p-3";
-                            
-
+  grid-template-areas:
+    "workExperience-h3-2 workExperience-h3-2 ."
+    "workExperience-p-2 . .";
 }
 
 #workExperience section:nth-of-type(4) {
-    grid-area: workExperience-section4;
-    display: grid;
-    background-image: url("../img/hotel.jpg");
-    grid-template-columns:  70% 10% 20%;
-    grid-template-rows: 
-                            50px    /* h3 */
-                            250px;   /* Text */
+  grid-area: workExperience-section4;
+  display: grid;
+  background-image: url("../img/construction.jpg");
+  grid-template-columns: 20% 10% 70%;
+  grid-template-rows:
+    50px /* h3 */
+    250px; /* Text */
 
-    grid-template-areas:
-                            "workExperience-h3-4 workExperience-h3-4 ."
-                            "workExperience-p-4 . .";
-                            
-
+  grid-template-areas:
+    ". workExperience-h3-3 workExperience-h3-3"
+    ". . workExperience-p-3";
 }
 
-#workExperience section h3 {grid-area: workExperience-h3-1;}
-#workExperience section div {grid-area: workExperience-p-1;}
-#workExperience section:nth-of-type(2) h3 {grid-area: workExperience-h3-2;}
-#workExperience section:nth-of-type(2) div {grid-area: workExperience-p-2;}
-#workExperience section:nth-of-type(3) h3 {grid-area: workExperience-h3-3;}
-#workExperience section:nth-of-type(3) div {grid-area: workExperience-p-3;}
-#workExperience section:nth-of-type(4) h3 {grid-area: workExperience-h3-4;}
-#workExperience section:nth-of-type(4) div {grid-area: workExperience-p-4;}
+#workExperience section:nth-of-type(5) {
+  grid-area: workExperience-section5;
+  display: grid;
+  background-image: url("../img/hotel.jpg");
+  grid-template-columns: 70% 10% 20%;
+  grid-template-rows:
+    50px /* h3 */
+    250px; /* Text */
 
+  grid-template-areas:
+    "workExperience-h3-4 workExperience-h3-4 ."
+    "workExperience-p-4 . .";
+}
 
-
+#workExperience section h3 {
+  grid-area: workExperience-h3-5;
+}
+#workExperience section div {
+  grid-area: workExperience-p-5;
+}
+#workExperience section:nth-of-type(2) h3 {
+  grid-area: workExperience-h3-1;
+}
+#workExperience section:nth-of-type(2) div {
+  grid-area: workExperience-p-1;
+}
+#workExperience section:nth-of-type(3) h3 {
+  grid-area: workExperience-h3-2;
+}
+#workExperience section:nth-of-type(3) div {
+  grid-area: workExperience-p-2;
+}
+#workExperience section:nth-of-type(4) h3 {
+  grid-area: workExperience-h3-3;
+}
+#workExperience section:nth-of-type(4) div {
+  grid-area: workExperience-p-3;
+}
+#workExperience section:nth-of-type(5) h3 {
+  grid-area: workExperience-h3-4;
+}
+#workExperience section:nth-of-type(5) div {
+  grid-area: workExperience-p-4;
+}
 
 /* //////////////////////////////// */
 /* Education */
 /* //////////////////////////////// */
 
 #education {
-    grid-area: education;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 75px auto;
-    grid-template-areas: "education-heading" "education-text";
+  grid-area: education;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 75px auto;
+  grid-template-areas: "education-heading" "education-text";
 }
 
 #education dd {
-    padding: 5px;
+  padding: 5px;
 }
 
 #education dt {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #education h2 {
-    grid-area: education-heading;
-    text-align: center;
+  grid-area: education-heading;
+  text-align: center;
 }
 #education div {
-    grid-area: education-text;
-    background-color: #0C1026EE;
-    padding: 20px;
+  grid-area: education-text;
+  background-color: #0c1026ee;
+  padding: 20px;
 }
 
 /* //////////////////////////////// */
@@ -536,198 +543,183 @@ main p{
 /* //////////////////////////////// */
 
 #about {
-    grid-area: about;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 75px auto auto;
-    grid-template-areas: "about-heading" "about-text-1" "about-text-2";
+  grid-area: about;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 75px auto auto;
+  grid-template-areas: "about-heading" "about-text-1" "about-text-2";
 }
 
 #about h2 {
-    grid-area: about-heading;
-    text-align: center;
+  grid-area: about-heading;
+  text-align: center;
 }
 #about iframe {
-    grid-area: player;
-    display: block;
-    margin: 20px auto;
-
+  grid-area: player;
+  display: block;
+  margin: 20px auto;
 }
 
 #about section {
-    display: grid;
-    grid-template-columns: 20% 10% 70%;
-    grid-template-rows: 50px auto;
-    grid-template-areas: ". about-section-1-h3 about-section-1-h3" ". . about-section-1-p";
-    grid-area: about-text-1;
-    background-image: url("../img/code.jpg");
-    background-size: 100% 100%;
-    text-align: left;
-   
+  display: grid;
+  grid-template-columns: 20% 10% 70%;
+  grid-template-rows: 50px auto;
+  grid-template-areas: ". about-section-1-h3 about-section-1-h3" ". . about-section-1-p";
+  grid-area: about-text-1;
+  background-image: url("../img/code.jpg");
+  background-size: 100% 100%;
+  text-align: left;
 }
 
 #about section h3 {
-    grid-area: about-section-1-h3;
+  grid-area: about-section-1-h3;
 }
 
 #about section div {
-    grid-area: about-section-1-p;
+  grid-area: about-section-1-p;
 }
 
 #about p {
-    padding: 20px;
+  padding: 20px;
 }
 
 #about section:nth-of-type(2) {
-    display: grid;
-    grid-template-columns: 70% 10% 20%;
-    grid-template-rows: 50px auto auto;
-    grid-template-areas: "about-section-2-h3 about-section-2-h3 ." "about-section-2-p . ." "player player player";
-    grid-area: about-text-2;
-    background-image: url("../img/music.png");
+  display: grid;
+  grid-template-columns: 70% 10% 20%;
+  grid-template-rows: 50px auto auto;
+  grid-template-areas: "about-section-2-h3 about-section-2-h3 ." "about-section-2-p . ." "player player player";
+  grid-area: about-text-2;
+  background-image: url("../img/music.png");
 }
 
 #about section:nth-of-type(2) h3 {
-    grid-area: about-section-2-h3;
+  grid-area: about-section-2-h3;
 }
 
 #about section:nth-of-type(2) div {
-    grid-area: about-section-2-p;
+  grid-area: about-section-2-p;
 }
-
 
 /* //////////////////////////////// */
 /* Contact */
 /* //////////////////////////////// */
 
 #contact {
-    grid-area: contact;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 75px 400px;
-    grid-template-areas: "contact-heading" "contact-form";
+  grid-area: contact;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 75px 400px;
+  grid-template-areas: "contact-heading" "contact-form";
 }
 
 #contact h2 {
-    grid-area: contact-heading;
-    text-align: center;
+  grid-area: contact-heading;
+  text-align: center;
 }
 #contact div {
-    grid-area: contact-form;
-    background-color: #0C1026EE;
+  grid-area: contact-form;
+  background-color: #0c1026ee;
 }
 
 form {
-    text-align: center;
+  text-align: center;
 }
 
 #name {
-    margin: 20px;
-    width: 80%;
+  margin: 20px;
+  width: 80%;
 }
 
 #subject {
-    margin-bottom: 20px;
-    width: 80%;
+  margin-bottom: 20px;
+  width: 80%;
 }
 
 #message {
-    width: 80%;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    resize: none;
+  width: 80%;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  resize: none;
 }
 
 #sendButton {
-    margin: 20px;
-    border: 2px solid #DB4CA0;
-    font-family: 'Press Start 2P', cursive;
-    color: #DB4CA0;
-    background-color: #0C1026EE;
-    padding: 20px;
+  margin: 20px;
+  border: 2px solid #db4ca0;
+  font-family: "Press Start 2P", cursive;
+  color: #db4ca0;
+  background-color: #0c1026ee;
+  padding: 20px;
 }
 
 .hidden {
-    visibility: hidden !important;
+  visibility: hidden !important;
 }
 
 .displayNone {
-    display: none !important;
+  display: none !important;
 }
-
-
-
-
 
 /* //////////////////////////////// */
 /* Tablet */
 /* //////////////////////////////// */
 
-@media screen and (min-width: 600px){
-    body{
-        max-width: 500px;
-    }
+@media screen and (min-width: 600px) {
+  body {
+    max-width: 500px;
+  }
 
+  #workExperience section:nth-of-type(1) {
+    grid-template-columns: Calc(100% / 3) Calc(100% / 6) 50%;
+  }
 
-    #workExperience section:nth-of-type(1) {
-        grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
-    }
+  #workExperience section:nth-of-type(2) {
+    grid-template-columns: 50% Calc(100% / 6) Calc(100% / 3);
+  }
 
-    #workExperience section:nth-of-type(2) {
-        grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
-    }
+  #workExperience section:nth-of-type(3) {
+    grid-template-columns: Calc(100% / 3) Calc(100% / 6) 50%;
+  }
 
-    #workExperience section:nth-of-type(3) {
-        grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
-    }
-
-    #workExperience section:nth-of-type(4) {
-        grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
-    }
-
-
+  #workExperience section:nth-of-type(4) {
+    grid-template-columns: 50% Calc(100% / 6) Calc(100% / 3);
+  }
 }
 
 /* //////////////////////////////// */
 /* Laptop / PC */
 /* //////////////////////////////// */
 
-@media screen and (min-width: 1024px){
-    body{
-        max-width: 800px;     
-    }
+@media screen and (min-width: 1024px) {
+  body {
+    max-width: 800px;
+  }
 
-    main {
-        font-size: 16px;
-        line-height: 1.25em;
-    }
-    #p-four {
-        grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
-    }
+  main {
+    font-size: 16px;
+    line-height: 1.25em;
+  }
+  #p-four {
+    grid-template-columns: Calc(100% / 3) Calc(100% / 6) 50%;
+  }
 
-    #p-three {
-        grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
-        grid-template-rows: 
-                                50px    /* Portfolio h3 */
-                                400px;   /* Text */
-    
-        grid-template-areas:
-                                "portfolio-h3-1 portfolio-h3-1 ."
-                                "portfolio-p-1 . . ";
-                                
-    }
+  #p-three {
+    grid-template-columns: 50% Calc(100% / 6) Calc(100% / 3);
+    grid-template-rows:
+      50px /* Portfolio h3 */
+      400px; /* Text */
 
-    #p-two {
-        grid-template-columns:  Calc(100%/3) Calc(100%/6) 50%;
-    }
+    grid-template-areas:
+      "portfolio-h3-1 portfolio-h3-1 ."
+      "portfolio-p-1 . . ";
+  }
 
-    #p-one {
-        grid-template-columns:  50% Calc(100%/6) Calc(100%/3);
-    }
+  #p-two {
+    grid-template-columns: Calc(100% / 3) Calc(100% / 6) 50%;
+  }
+
+  #p-one {
+    grid-template-columns: 50% Calc(100% / 6) Calc(100% / 3);
+  }
 }
-
-
-
-
