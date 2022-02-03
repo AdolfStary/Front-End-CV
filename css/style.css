@@ -16,6 +16,10 @@ Colors:
   margin: 0;
 }
 
+:hover {
+  transition: 0.3s ease;
+}
+
 .fas {
   cursor: pointer;
 }
@@ -260,6 +264,7 @@ main p {
   grid-template-columns: 100%;
   grid-template-rows:
     75px /* Portfolio h2 */
+    450px /* Project 5 */
     450px /* Project 4 */
     450px /* Project 3 */
     450px /* Project 2 */
@@ -267,16 +272,32 @@ main p {
 
   grid-template-areas:
     "portfolio-h2"
-    "portfolio-section4"
-    "portfolio-section3"
     "portfolio-section1"
-    "portfolio-section2";
+    "portfolio-section2"
+    "portfolio-section3"
+    "portfolio-section4"
+    "portfolio-section5";
+}
+
+#p-five {
+  grid-area: portfolio-section1;
+  display: grid;
+  background-image: url("../img/insurgency.jpg");
+  background-size: 100% 100%;
+  grid-template-columns: 70% 10% 20%;
+  grid-template-rows:
+    50px /* Portfolio h3 */
+    400px; /* Text */
+
+  grid-template-areas:
+    "portfolio-h3-1 portfolio-h3-1 ."
+    "portfolio-p-1 . . ";
 }
 
 #p-four {
-  grid-area: portfolio-section4;
+  grid-area: portfolio-section2;
   display: grid;
-  background-image: url("../img/wellnesstracker.gif");
+  background-image: url("../img/insurgency.jpg");
   background-size: 100% 100%;
   grid-template-columns: 20% 10% 70%;
   grid-template-rows:
@@ -291,7 +312,7 @@ main p {
 #p-three {
   grid-area: portfolio-section3;
   display: grid;
-  background-image: url("../img/milestone2a.png");
+  background-image: url("../img/UnrealGame.gif");
   background-size: 100% 100%;
   grid-template-columns: 70% 10% 20%;
   grid-template-rows:
@@ -304,9 +325,9 @@ main p {
 }
 
 #p-two {
-  grid-area: portfolio-section1;
+  grid-area: portfolio-section4;
   display: grid;
-  background-image: url("../img/UnrealGame.gif");
+  background-image: url("../img/wellnesstracker.gif");
   background-size: 100% 100%;
   grid-template-columns: 20% 10% 70%;
   grid-template-rows:
@@ -319,9 +340,9 @@ main p {
 }
 
 #p-one {
-  grid-area: portfolio-section2;
+  grid-area: portfolio-section5;
   display: grid;
-  background-image: url("../img/hangman.png");
+  background-image: url("../img/milestone2a.png");
   background-size: 100% 100%;
   grid-template-columns: 70% 10% 20%;
   grid-template-rows:
@@ -408,7 +429,7 @@ main p {
 #workExperience section {
   grid-area: workExperience-section1;
   display: grid;
-  background-image: url("../img/hangmanCode.png");
+  background-image: url("../img/newworld.jpg");
   background-size: 100% 100%;
   grid-template-columns: 70% 10% 20%;
   grid-template-rows:
@@ -423,7 +444,7 @@ main p {
 #workExperience section:nth-of-type(2) {
   grid-area: workExperience-section2;
   display: grid;
-  background-image: url("../img/engine.jpg");
+  background-image: url("../img/code.jpg");
   background-size: 100% 100%;
   grid-template-columns: 20% 10% 70%;
   grid-template-rows:
@@ -438,7 +459,7 @@ main p {
 #workExperience section:nth-of-type(3) {
   grid-area: workExperience-section3;
   display: grid;
-  background-image: url("../img/fiber.jpg");
+  background-image: url("../img/engine.jpg");
   grid-template-columns: 70% 10% 20%;
   grid-template-rows:
     50px /* h3 */
@@ -452,7 +473,7 @@ main p {
 #workExperience section:nth-of-type(4) {
   grid-area: workExperience-section4;
   display: grid;
-  background-image: url("../img/construction.jpg");
+  background-image: url("../img/fiber.jpg");
   grid-template-columns: 20% 10% 70%;
   grid-template-rows:
     50px /* h3 */
@@ -466,7 +487,7 @@ main p {
 #workExperience section:nth-of-type(5) {
   grid-area: workExperience-section5;
   display: grid;
-  background-image: url("../img/hotel.jpg");
+  background-image: url("../img/construction.jpg");
   grid-template-columns: 70% 10% 20%;
   grid-template-rows:
     50px /* h3 */
